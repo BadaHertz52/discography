@@ -1,0 +1,2 @@
+[1006/171909.921:ERROR:process_reader_win.cc(151)] SuspendThread: 액세스가 거부되었습니다. (0x5)
+[1006/171909.923:ERROR:exception_snapshot_win.cc(99)] thread ID 18500 not found in process
