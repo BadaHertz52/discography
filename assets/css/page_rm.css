@@ -1,0 +1,70 @@
+/* rm */
+#rm2 {
+  background-color:#c9c9c9af
+}
+#rm2 .header_toggle.on{
+  background-color: rgba(139, 137, 137, 0.027);
+}
+#rm2 .header_toggle.on li:nth-child(1){
+  background-color: rgba(2, 2, 2, 0.185);
+  color: #ffff ;
+}
+
+
+#rm2 #music_platform i{
+  color: #6d6a6a;
+}
+#rm2 #music_platform i:hover{
+  color: #000000;
+}
+
+#rm2 .tracklist{
+  background-color:#fafafa3a;
+}
+
+#rm2 #lyric_place{
+  background-color:#fafafa3a;
+}
+#rm2 .tracklist  .toggle_btn:hover{
+  color: #969595;
+} 
+#rm2 .toggle_btn{
+  font-family: 'Nanum Brush Script', cursive;
+  font-size: 25px;
+}
+#rm2 pre{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: 'Gaegu', cursive;
+  font-size: 19px;
+  color:#242423;
+}
+#rm #next{
+  color:#24242362;
+}
+#rm2 #prev:hover ,#next:hover{
+  color:#242423;
+}
+#rm2 .more{
+  background-color:#fafafa3a ;
+}
+#rm2 .more .twitter {
+  width: 100%;
+}
+#rm2 .more .toggle.on  {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5%;
+}
+
+#rm2 .more .toggle.on a {
+  color: #636363;
+}
+#rm2 .more .toggle.on a:hover {
+  color:#242423 ;
+}
+#rm2 .more .toggle.on p {
+  margin: 0 4%;
+}
+
