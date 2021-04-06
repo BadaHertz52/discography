@@ -1,0 +1,48 @@
+
+body{
+  margin: 0;
+  
+}
+
+/*header*/
+header {
+  width: 100%;
+  height: 8%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color: rgba(255, 255, 255, 0.438);
+  box-sizing: border-box;
+}
+header .logo{
+  display: flex;
+  justify-content:center;
+  margin-bottom: 1%;
+}
+header .logo a{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 60px;
+}
+header .logo a:any-link{
+  text-decoration: none;
+  color:#212121 ;
+}
+header .logo a:hover{
+  font-weight:bolder ;
+}
+header img{
+  margin-left: 20px;
+  padding-top: 10px;
+  height: 50px;
+}
+
+/*fotter*/
+footer{
+  width: 100%;
+  height: 5%;
+  padding: 0 30%;
+
+
+}
+
+
+
