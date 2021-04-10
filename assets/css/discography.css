@@ -78,12 +78,11 @@ header img:hover {
 /*inner*/
 .inner {
   display: flexbox;
-  flex-direction: column;
+  flex-flow: column wrap;
   margin: 2% 10%;
   width: 80%;
   height: 100%;
-
-
+  
 }
 
 .music,
@@ -96,16 +95,17 @@ header img:hover {
   display: flex;
   justify-content: space-around;
   margin-left: 60%;
-
+ 
 }
 
 .mixtape {
   margin-top: 20px;
-  height: 300px;
+  height:300px;
   display: flex;
   justify-content: space-around;
   box-sizing: border-box;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .cover img {
@@ -125,21 +125,18 @@ header img:hover {
 #lyric_place {
   width: 40%;
   height: 100%;
-
+  overflow: auto;
+  
 }
 
 .tracklist ul {
   list-style: none;
   padding: 0.5% 10%;
 
-
 }
 
 .toggle_btn {
-
-
   margin: 3% 0;
-
 }
 
 
@@ -249,10 +246,9 @@ section:nth-child(2) {
 
 }
 
-/*media query
+/*media query*/
 
-ipad pro
-@media  (width:1024px ,height:1366px){
+@media  (width:1024px , height:1366px){
 
 }
 @media (max-width:770px){
@@ -315,4 +311,4 @@ ipad pro
     font-size: 20%;
   }
   
-}*/
+}

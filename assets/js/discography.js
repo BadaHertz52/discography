@@ -53,11 +53,44 @@ toogleHeaderNavbar ();
 /*music tracklist&lyrics*/
 function ShowLyrics () {
     'use strict';
-   
-    const $trackToggleBtns = document.querySelectorAll('.toggle_btn');
-  
+  // trackList 와 lyric 배열 만들기 
+  const trackLists = document.querySelectorAll(".tracklist .toggle_btn");
+  const arrayTrackLists = Array.from(trackLists);
+  const lyrics = document.querySelectorAll(".lyric") ;
+  const arrayLyrics = Array.from(lyrics);
+   const $trackToggleBtns = document.querySelectorAll('.toggle_btn');
   
   function addEventListener() {
+    $trackToggleBtns.forEach(btn => {
+     
+      //클릭 시 해당 곡 가사 보이고, 다른 가사들은 숨김처리 
+      btn.addEventListener('click',function
+      (){
+        closeOtherToggle();
+      //버튼과 같은 index 의 가사가 보이도록 
+        // btn의 index 구하기 
+        const index = arrayTrackLists.indexOf(btn);
+        console.log(index);
+        // btn과 같은 index 가사 보임 
+        const lyric = arrayLyrics[index] ;
+        console.log(lyric);
+        lyric.classList.toggle('on') ;
+      });
+      // 더블 클릭 시 해당 곡 가사 숨김처리 
+        btn.addEventListener('dblclick',function
+      (){
+        
+        toggles.forEach( function toggleRemove (toggle){toggle.classList.remove('on')} )
+        });
+    });
+
+    
+  }
+    addEventListener();
+  
+    };
+  
+  /*function addEventListener() {
     $trackToggleBtns.forEach(btn => {
       //클릭 시 해당 곡 가사 보이고, 다른 가사들은 숨김처리 
       btn.addEventListener('click',function
@@ -76,7 +109,7 @@ function ShowLyrics () {
   }
     addEventListener();
   
-    };
+    };*/ 
 
 ShowLyrics ();
 

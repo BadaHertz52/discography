@@ -21,6 +21,17 @@
   color: rgb(212, 215, 230) ;
   
 }
+#suga1 #music_platform i{
+  color: rgba(169, 173, 177, 0.979);
+}
+#suga1 #music_platform i:hover{
+  color:rgba(83, 109, 136, 0.979);
+}
+#suga1 .tracklist ,
+#suga1 #lyric_place{
+  background-color:rgba(169, 173, 177, 0.979);
+}
+
 #suga1 .tracklist li {
   margin-bottom: 2%;
 }
@@ -28,7 +39,7 @@
   font-family: 'Do Hyeon', sans-serif;
   font-size: 18px;
 }
-#suga1 .tracklist pre {
+#suga1  pre {
   width: 100%;
   height: 100%;
   position: relative;
@@ -38,31 +49,19 @@
   font-weight: lighter;
   
 }
-#suga1 #prev ,#suga1 #next{
-  color: rgba(169, 173, 177, 0.979);
-}
-#suga1 #prev:hover , #suga1 #next:hover{
-  color:rgba(83, 109, 136, 0.979);
-}
-#suga1 #music_platform i{
-  color: rgba(169, 173, 177, 0.979);
-}
-#suga1 #music_platform i:hover{
-  color:rgba(83, 109, 136, 0.979);
-}
 
-#suga1 .tracklist{
-  background-color:rgba(169, 173, 177, 0.979);
-}
 
-#suga1 #lyric_place{
-  background-color:rgba(169, 173, 177, 0.979);
-}
 #suga1 .tracklist  .toggle_btn:hover{
   font-weight: bolder;
 } 
 #suga1 .mv_button {
   color:rgba(169, 173, 177, 0.979) ;
+}
+#suga1 #prev ,#suga1 #next{
+  color: rgba(169, 173, 177, 0.979);
+}
+#suga1 #prev:hover , #suga1 #next:hover{
+  color:rgba(83, 109, 136, 0.979);
 }
 #suga1 .more{
   background-color:#fafafa11 ;
