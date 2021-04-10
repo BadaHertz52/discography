@@ -25,6 +25,7 @@
 
 #rm2 #lyric_place{
   background-color:#fafafa3a;
+  padding: 0;
 }
 #rm2 .tracklist  .toggle_btn:hover{
   color: #969595;
