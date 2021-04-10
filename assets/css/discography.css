@@ -169,7 +169,7 @@ header img:hover {
   
 }
 
-/*mv slider - 왜 따로 파일을 만들면 안될까?*/
+/*mv slider*/
 .mv_container {
   position: relative;
 
@@ -177,18 +177,29 @@ header img:hover {
 
 .mv_button {
   margin: 0  7%;
+}
+.mv_button div{
+  
+  display: flex;
+  justify-content: space-between;
   
 }
+
+#prev.disabled,
+#next.disabled {
+  display: none;
+}
+
 iframe{
   width :900px;
   height :506px;
 }
 .slider-container {
   position: absolute;
-  top: 5%;
+  top:20%;
   width: 100%;
   padding: 0;
-  margin-top: 10px;
+  
 }
 
 .slider-container.animated {
@@ -199,31 +210,11 @@ iframe{
 
 .slide {
   position: absolute;
-  top: 5%;
+  top: 8%;
   width: 86%;
   padding: 5% 7%;
 
 }
-
-#prev, #next {
-  position: absolute;
-  top: 390px;
-  
-}
-#prev{
-  left: 10px;
-}
-#next {
-
-  right: 10px;
-
-}
-
-#prev.disabled,
-#next.disabled {
-  display: none;
-}
-
 
 .behind div {
   display: flex;
@@ -251,7 +242,7 @@ iframe{
   text-decoration: none;
 }
 
- .more .toggle.on a:hover {
+.more .toggle.on a:hover {
   font-weight: bolder;
 
 }
@@ -316,23 +307,14 @@ iframe{
     width: 600px;
     height: 338px;
   };
-  #prev , #next{
-    position: absolute;
-    top: 180px;
-  }
+
 }
 @media (max-width:700px) {
   iframe{
     width:450px ;
     height: 253px;
   }
-  #prev , #next{
-    position: absolute;
-    top: 165px;
-  }
-  #next {
-    right:3px;
-  }
+
 }
 
 @media (max-width:550px) {
@@ -382,9 +364,7 @@ iframe{
     width: 300px;
     height: 169px;
   }
-  #prev ,#next {
-    top:120px
-  }
+
 
 }
 

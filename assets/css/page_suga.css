@@ -21,9 +21,7 @@
   color: rgb(212, 215, 230) ;
   
 }
-#suga1 #music_platform i{
-  color: rgba(169, 173, 177, 0.979);
-}
+
 #suga1 #music_platform i:hover{
   color:rgba(83, 109, 136, 0.979);
 }
@@ -46,12 +44,17 @@
   font-weight: lighter;
   
 }
-
+#suga1 .mv_button :last-child  {
+  padding-left: 5%;
+  font-size: 22px;
+  font-weight: bold;
+}
 
 #suga1 .tracklist  .toggle_btn:hover{
   font-weight: bolder;
 } 
-#suga1 i ,#suga1 .mv_button ,#suga1 #prev ,#suga1 #next{
+
+#suga1 i ,#suga1 .mv_button div ,#suga1 #prev ,#suga1 #next{
   color:rgba(169, 173, 177, 0.979) ;
 }
 
