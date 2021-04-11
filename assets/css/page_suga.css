@@ -35,18 +35,18 @@
 }
 #suga1 .tracklist div{
   font-family: 'Do Hyeon', sans-serif;
-  font-size: 18px;
+  font-size: 1.5vw;
 }
 #suga1  pre {
   
   font-family: 'Do Hyeon', sans-serif;
-  font-size: 18px;
+  font-size: 1.2vw;
   font-weight: lighter;
   
 }
 #suga1 .mv_button :last-child  {
   padding-left: 5%;
-  font-size: 22px;
+  font-size: 2vw;
   font-weight: bold;
 }
 
@@ -59,7 +59,10 @@
 }
 
 #suga1 #prev:hover , #suga1 #next:hover{
-  color:rgba(83, 109, 136, 0.979);
+  color:rgba(27, 94, 165, 0.979);
+}
+#suga1 .mv{
+  height: 44vw;
 }
 #suga1 .more{
   background-color:#fafafa11 ;
@@ -85,24 +88,67 @@
   color: #e6e6e6;
 
 }
-
-@media (max-width:650px) {
-  #suga1 .tracklist div ,#suga1 .lyric pre {
-    font-size: 12px;
-  }
+#suga1 footer{
+  color: rgba(169, 173, 177, 0.979);
 }
 
-@media (max-width:450px) {
-  #suga1 .tracklist div , #suga1 .lyric pre{
-    font-size:10px;
-}
-@media (max-width:333px) {
-  #suga1 .tracklist div ,#suga1 .lyric pre {
-    font-size: 4px;
-    
-}
-  #suga1 #lyric_place {
-    padding-left: 2px;
+/*미디어 쿼리*/
+@media (min-width:1024px) {
+  #suga1 .more{
+    margin-top:15%;
   }
 }
+@media (max-width:930px) {
+  #suga1 .tracklist .toggle_btn {
+    font-size: 2vw;
+  }
+  #suga1 .lyric pre{
+    font-size: 2.2vw;
+  }
+  #suga1 #lyric_place{
+    padding:0 20%;
+  }
+}
+@media (max-width:700px) {
+  #suga1 .more .toggle.on{
+    flex-direction: column;
+    padding: 0 25%;
+  }
+  #suga1 .more .toggle.on p {
+    padding-top:8px ;
+    font-size: 2.5vw;
+  }s
+}
+@media (max-width:350px) {
+  #suga1 .tracklist .toggle_btn {
+    font-size: 2vw;
+  }
+  #suga1 .lyric pre{
+    font-size: 1vw;
+  }
+  #suga1 #lyric_place{
+    padding:0 15%;
+  }
+}
+@media (max-width:300px) {
+  #suga1 .mv_button div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #suga1 .mv_button div p:nth-child(1) {
+    margin: 0 10px 0 0;
+  }
+  #suga1 .mv_button div p:nth-child(2){
+    padding-top: 6px;
+    margin: 0;
+  }
+  #suga1 .mv_button div p:nth-child(3) {
+    margin:  0;
+  }
+
+ 
+
+}
+
+
 
