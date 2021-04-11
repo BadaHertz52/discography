@@ -340,13 +340,7 @@ footer{
 
 }
 @media (max-width:700px) {
-  #suga1 .more .toggle.on{
-    flex-direction: column;
-    padding: 0 25%;
-  }
-  #suga1 .more .toggle.on p {
-    padding-top:8px ;
-  }
+
   footer{
     font-size: 1vw;
   }
