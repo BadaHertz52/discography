@@ -1,3 +1,4 @@
+
 body {
   overflow-x: hidden;
 }
@@ -12,7 +13,7 @@ body {
 
 .fa-compact-disc {
   margin: 2% 0.7%;
-  font-size: 23px;
+  font-size: 2vw;
 }
 
 a {
@@ -20,10 +21,15 @@ a {
   color: #242423;
 }
 
-
 /*header-nav*/
+header{
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+}
 header .logo {
-  margin: 5% 0%;
+  margin:5% 0% 0% 0%;
+  
 }
 
 header img:hover {
@@ -77,19 +83,20 @@ header img:hover {
 
 /*inner*/
 .inner {
-  display: flexbox;
-  flex-flow: column wrap;
+  display: flexbox ;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
   margin: 2% 10%;
   width: 80%;
   height: 100%;
-  
 }
+
 .music > i {
   padding-left: 10px ;
 }
-.music,
-.behind {
-  padding:20px 0 80px 80px ;
+.music {
+  padding:2vh 5vw;
   
 }
 
@@ -135,7 +142,7 @@ header img:hover {
   height: 20vw;
   overflow: auto;
   margin: 0;
-  padding-left: 15%;
+  padding-left:1%;
   box-sizing: border-box;
 }
 
@@ -146,6 +153,7 @@ header img:hover {
 .tracklist ul {
   list-style: none;
   padding: 0.5% 10%;
+  margin: 0;
 
 }
 
@@ -159,13 +167,10 @@ header img:hover {
 }
 
 #lyric_place .toggle.on {
-  
   display: block;
-  
- 
 }
 #lyric_place .no_lyric {
-  padding: 70% 65% ;
+  padding: 10% 17% ;
   
 }
 
@@ -181,8 +186,10 @@ header img:hover {
 .mv_button div{
   padding-left:5%;
   display: flex;
-  justify-content: space-between;
-
+  justify-content: center;
+}
+.mv_button div p{
+  margin: 2vw 5%;
 }
 
 #prev.disabled,
@@ -190,13 +197,20 @@ header img:hover {
   display: none;
 }
 
+.mv {
+  margin-bottom: 10vh;
+  height:44vw;
+}
+/*behind 카데고리가 없는 페이지는 다로 margin bottom 을 15vh 로 조정해야 함 */
 
 .slider-container {
-  position: absolute;
-  top:28%;
+  position: relative;
   width: 100%;
+  height: 100%;
   padding: 0;
- 
+  display: flex;
+  box-sizing: border-box;
+
 }
 
 .slider-container.animated {
@@ -204,20 +218,25 @@ header img:hover {
   transition: left .3s ease-in;
   padding: 0;
   margin: 0;
-  
 }
 
 .slide {
+  display: block;
   position: absolute;
   top: 0 ;
-  width: 90%;
   padding-left: 7%;
   border-style: solid;
   border-color:green;
 }
+
+iframe{
+  width: 70vw;
+  height:39.375vw ;
+}
 .behind{
-  margin-top: 160px;
-  width: 85%;
+  padding: 0 5vw ;
+  margin: 5vh 0;
+  
 }
 .behind div{
   padding-top: 5%;
@@ -226,9 +245,14 @@ header img:hover {
 .more {
   display: flex;
   justify-content: space-around;
-  margin: 5% 7%;
+  width: 70vw;
+  margin: 0% 7%;
 }
 
+.more .twitter img{
+  width: 7vw;
+  height: auto;
+}
 .more .toggle {
   display: none;
 }
@@ -241,6 +265,7 @@ header img:hover {
 .more .toggle.on a {
   display: block;
   text-decoration: none;
+  margin: 0;
 }
 
 .more .toggle.on a:hover {
@@ -248,6 +273,11 @@ header img:hover {
 
 }
 
+footer{
+  margin: 8vh 16% ;
+  padding: 0;
+ 
+}
 /*media query*/
 
 @media  (max-width:930px ){
@@ -263,14 +293,12 @@ header img:hover {
   #lyric_place {
     width: 72vw;
     height: 20vw;
-    padding:0 20%;
+    padding:0 10%;
   
   }
-  
-  .lyric pre {
-    font-size: 30px;
+  footer{
+    margin-top: 5vh;
   }
- 
 }
 
 @media  (max-width:800px ){
@@ -297,25 +325,16 @@ header img:hover {
     padding:0 20%;
   
   }
-  
-  .lyric pre {
-    font-size: 30px;
-  }
+
   .more{
     margin: 13% 7%;
   }
-  iframe{
-    width: 600px;
-    height: 338px;
-  };
 
 }
 @media (max-width:700px) {
-  iframe{
-    width:450px ;
-    height: 253px;
+  footer{
+    font-size: 1vw;
   }
-
 }
 
 @media (max-width:550px) {
@@ -326,16 +345,11 @@ header img:hover {
     padding-top:10px;
     font-size: 13px;
   }
-  .musci{
+  .music{
     padding: 2%;
     margin-bottom: 6%;
   }
-  .music i , .mv_button i {
-    font-size: 20px;
-  }
-  .mv_button {
-    font-size: 12px;
-  }
+
   .cover {
     width: 30vw;
     height: 30vw;
@@ -351,39 +365,19 @@ header img:hover {
   
   }
 
-  .twitter a {
-
-    font-size: 11px;
-  }
-  .twitter img{
-    width: ;
-  }
 }
 
-@media (max-width:465px) {
-  iframe{
-    width: 300px;
-    height: 169px;
-  }
-
-
-}
-
-@media (max-width:413px) {
+@media (max-width:460px) {
+  
   .header_toggle.on li {
-    font-size: 11.5px;
+    font-size: 1.5vw;
   }
   .header_toggle.on li:nth-child(1) {
     padding-top:10px;
-    font-size: 13px;
+    font-size: 1.2vw;
   }
  
-  .music i , .mv_button i {
-    font-size: 12px;
-  }
-  .mv_button {
-    font-size: 10px;
-  }
+
   .cover {
     width: 30vw;
     height: 30vw;
@@ -401,12 +395,23 @@ header img:hover {
   
   }
 
-
-  .twitter a {
-
-    font-size: 11px;
+} 
+@media (max-width:350px) {
+  
+ 
+  .header_toggle.on li {
+  
+    font-size: 0.5px;
   }
-  .twitter img{
-    width: 15px ;
+  .header_toggle.on li:nth-child(1) {
+    font-size: 5px;
+  }
+ 
+  .more .twitter {
+    font-size: 0.005vw;
+  }
+
+  footer{
+    font-size: 0.05vw;
   }
 }
