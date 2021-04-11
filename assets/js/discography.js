@@ -58,7 +58,7 @@ function ShowLyrics () {
   const arrayTrackLists = Array.from(trackLists);
   const lyrics = document.querySelectorAll(".lyric") ;
   const arrayLyrics = Array.from(lyrics);
-   const $trackToggleBtns = document.querySelectorAll('.toggle_btn');
+  const $trackToggleBtns = document.querySelectorAll('.toggle_btn');
   
   function addEventListener() {
     $trackToggleBtns.forEach(btn => {
@@ -69,11 +69,10 @@ function ShowLyrics () {
         closeOtherToggle();
       //버튼과 같은 index 의 가사가 보이도록 
         // btn의 index 구하기 
-        const index = arrayTrackLists.indexOf(btn);
-        console.log(index);
+        const $index = arrayTrackLists.indexOf(btn);
+        
         // btn과 같은 index 가사 보임 
-        const lyric = arrayLyrics[index] ;
-        console.log(lyric);
+        const lyric = arrayLyrics[$index] ;
         lyric.classList.toggle('on') ;
       });
       // 더블 클릭 시 해당 곡 가사 숨김처리 
