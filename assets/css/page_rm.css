@@ -101,6 +101,10 @@
   #rm2 .mv_button p {
     font-size: 2vw;
   }
+  #rm2 .behind {
+    margin: 3vh 0 ;
+  }
+  
 }
 @media (max-width:340px) {
   #rm2 #lyric_place{
