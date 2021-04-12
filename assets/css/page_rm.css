@@ -47,6 +47,7 @@
 #rm2 .mv_button div p:nth-of-type(2n+1) #prev:hover{
   color:#d4c259;
 }
+
 #rm2 .more{
   background-color:#fafafa3a ;
 }
@@ -63,9 +64,63 @@
   color: #636363;
 }
 #rm2 .more .toggle.on a:hover {
-  color:#242423 ;
+  font-weight: bolder;
 }
 #rm2 .more .toggle.on p {
   margin: 0 4%;
 }
+
+/*미디어 쿼리*/
+@media (min-width:1024px) {
+  
+  
+}
+@media (max-width:930px) {
+  #rm2 .tracklist .toggle_btn {
+    font-size: 3vw;
+    padding-top: 5px;
+  }
+  #rm2 .lyric pre{
+    font-size: 2.5vw;
+  }
+  #rm2 #lyric_place{
+    padding:0 20%;
+  }
+}
+@media (max-width:700px) {
+  #rm2 .more .toggle.on{
+    flex-direction: column;
+    padding: 0 25%;
+  }
+  #rm2 .more .toggle.on p {
+    padding-top:8px ;
+    font-size: 2.5vw;
+  }
+}
+@media (max-width:560px) {
+  #rm2 .mv_button p {
+    font-size: 2vw;
+  }
+}
+@media (max-width:340px) {
+  #rm2 #lyric_place{
+    padding:0 15%;
+  }
+  #rm2 .mv_button div {
+    padding: 0;
+  }
+  #rm2 .mv_button p{
+    margin: 2px;
+    margin-bottom: 5px;
+    font-size:1vw;
+  }
+}
+@media (max-width:300px) {
+  
+ 
+
+
+}
+
+
 
