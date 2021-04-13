@@ -1,4 +1,4 @@
-
+'use strict';
 /* toggle 공통 */
 const toggles = document.querySelectorAll('.toggle')
 function closeOtherToggle(){
@@ -12,12 +12,12 @@ function closeOtherToggle(){
 /*header navbar toggle*/
 
 function toogleHeaderNavbar () {
-    'use strict';
+    
     const $toggles = document.querySelectorAll('.header_toggle'); // Return NodeList
     const $toggleBtn = document.querySelector('.header_toggle_btn'); // Return Element
   
   function doToggle($toggles ,$toggleBtn) {
-    'use strict';
+    
      $toggleBtn.addEventListener('click', function () {
           closeOtherToggle();
           toggleElements();
@@ -57,12 +57,12 @@ function ShowLyrics () {
   const $trackLists = document.querySelectorAll(".tracklist .toggle_btn");
   const $arrayTrackLists = Array.from($trackLists);
   const $lyrics = document.querySelectorAll(".lyric") ;
-  const $arrayLyrics = Array.from($lyrics);
+  
   const $trackToggleBtns = document.querySelectorAll('.toggle_btn');
   
   function addEventListener() {
     $trackToggleBtns.forEach(btn => {
-     
+    
       //클릭 시 해당 곡 가사 보이고, 다른 가사들은 숨김처리 
       btn.addEventListener('click',function
       (){
@@ -72,8 +72,8 @@ function ShowLyrics () {
         const $index = $arrayTrackLists.indexOf(btn);
         
         // btn과 같은 index 가사 보임 
-        const $lyric = $arrayLyrics[$index] ;
-        $lyric.classList.toggle('on') ;
+        $lyrics[$index].classList.toggle('on');
+        /*$lyric.classList.toggle('on') ;*/
       });
       // 더블 클릭 시 해당 곡 가사 숨김처리 
         btn.addEventListener('dblclick',function
@@ -93,12 +93,12 @@ ShowLyrics ();
 
 /*more*/
 function toogleMore () {
-    'use strict';
+
     const $toggle = document.querySelector('.more .toggle'); 
     const $toggleBtn = document.querySelector('.more .toggle_btn');
   
   function doToggle($toggle ,$toggleBtn) {
-    'use strict';
+  
      $toggleBtn.addEventListener('click', function () {
        $toggle.classList.toggle('on');
         });
