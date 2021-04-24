@@ -35,7 +35,9 @@ header img{
   padding-top: 6px;
   height: 50px;
 }
-
+.fa-compact-disc:before{
+  margin-right: 5px;
+}
 /*fotter*/
 footer{
   width: 100%;
