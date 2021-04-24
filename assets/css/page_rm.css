@@ -1,3 +1,128 @@
+/* rm1 */
+#rm1 {
+  background-color:#fafafadc
+}
+#rm1 .header_toggle.on{
+  background-color: rgba(117, 116, 116, 0.226);
+}
+#rm1 .header_toggle.on li:nth-child(1){
+  background-color: rgba(2, 2, 2, 0.493);
+  color: #fafafadc ;
+}
+#rm1 #music_platform{
+  margin-left: 58vw;
+  font-size: 4vw;
+}
+#rm1 #music_platform i{
+  color:rgba(94, 93, 93, 0.534);
+}
+#rm1 #music_platform i:hover{
+  color: rgb(2,2,2);
+}
+
+#rm1 .tracklist , #rm1 p{
+  font-family: 'East Sea Dokdo', cursive;
+}
+#rm1 .tracklist {
+  width: 46vw;
+  font-size: 4.6vw;
+}
+
+#rm1 .tracklist li{
+  margin-bottom: 5px;
+}
+#rm1 #next , #rm2 #prev{
+  color:rgba(94, 93, 93, 0.616);
+}
+#rm1 .mv_button div p:nth-of-type(2n+1) #next:hover ,
+#rm1 .mv_button div p:nth-of-type(2n+1) #prev:hover{
+  color:rgb(2,2,2);
+}
+#rm1 .mv_button p{
+  font-size: 2.5vw;
+}
+#rm1 .mv_button p:nth-child(2){
+  font-size:6vw ;
+}
+#rm1 .more{
+  background-color:rgba(241, 241, 241, 0.342) ;
+}
+#rm1 .more .twitter {
+  width: 100%;
+}
+#rm1 .more .toggle.on  {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 5% 20%;
+  
+}
+
+#rm1 .more .toggle.on a {
+  color: rgb(94, 93, 93);
+}
+#rm1 .more .toggle.on a:hover {
+  font-weight: bolder;
+}
+#rm1 .more .toggle.on p {
+  margin: 0 4%;
+}
+
+/*미디어 쿼리*/
+@media (min-width:520px) {
+  #rm1 .tracklist {
+    width: 40vw;
+  }
+}
+@media (min-width:797px) {
+  #rm1 .tracklist {
+    width: 35vw;
+    
+  }
+  #rm1 .tracklist li {
+    padding-bottom:6px ;
+  }
+}
+@media (min-width:938px) {
+  #rm1 .tracklist {
+    width: 50vw;
+    font-size: 4vw;
+  }
+  #rm1 .tracklist ul{
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}
+@media (max-width:560px) {
+  #rm2 .mv_button p {
+    font-size: 2vw;
+  }
+  #rm2 .behind {
+    margin: 3vh 0 ;
+  }
+  
+}
+@media (max-width:340px) {
+  #rm2 #lyric_place{
+    padding:0 15%;
+  }
+  #rm2 .mv_button div {
+    padding: 0;
+  }
+  #rm2 .mv_button p{
+    margin: 2px;
+    margin-bottom: 5px;
+    font-size:1vw;
+  }
+}
+@media (max-width:300px) {
+  
+ 
+
+
+}
+
+
 
 /* rm2 */
 #rm2 {
