@@ -360,7 +360,9 @@ footer{
     padding: 2%;
     margin-bottom: 6%;
   }
-
+  #music_platform i{
+    font-size: 5vw;
+  }
   .cover {
     width: 30vw;
     height: 30vw;
