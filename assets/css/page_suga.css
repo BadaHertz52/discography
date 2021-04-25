@@ -29,7 +29,10 @@
 #suga1 #lyric_place{
   background-color:rgba(169, 173, 177, 0.979);
 }
-
+#suga1 .tracklist ul{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 #suga1 .tracklist li {
   margin-bottom: 2%;
 }
@@ -64,6 +67,7 @@
 #suga1 .mv{
   height: 44vw;
 }
+#sug1 .
 #suga1 .more{
   background-color:#fafafa11 ;
 }
@@ -106,7 +110,7 @@
     font-size: 2.2vw;
   }
   #suga1 #lyric_place{
-    padding:0 20%;
+    padding: 3%  10%;
   }
 }
 @media (max-width:700px) {
@@ -117,17 +121,20 @@
   #suga1 .more .toggle.on p {
     padding-top:8px ;
     font-size: 2.5vw;
-  }s
+  }
 }
+
 @media (max-width:350px) {
   #suga1 .tracklist .toggle_btn {
     font-size: 2vw;
   }
   #suga1 .lyric pre{
-    font-size: 1vw;
+    font-size: 7px;
+    font-weight: lighter;
   }
   #suga1 #lyric_place{
-    padding:0 15%;
+    padding-left: 3%;
+    padding-right: 3%;
   }
 }
 @media (max-width:300px) {
