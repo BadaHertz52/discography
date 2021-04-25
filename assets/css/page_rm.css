@@ -2,6 +2,9 @@
 #rm1 {
   background-color:#fafafadc
 }
+#rm1 header img{
+  margin-top: 10px;
+}
 #rm1 .header_toggle.on{
   background-color: rgba(117, 116, 116, 0.226);
 }
@@ -25,7 +28,7 @@
 }
 #rm1 .tracklist {
   width: 46vw;
-  font-size: 4.6vw;
+  font-size: 3.5vw;
 }
 
 #rm1 .tracklist li{
@@ -55,6 +58,7 @@
   flex-direction: column;
   justify-content: space-around;
   margin: 5% 20%;
+  padding-left: 8vw;
   
 }
 
@@ -69,11 +73,38 @@
 }
 
 /*미디어 쿼리*/
+/*rm1*/
 @media (min-width:520px) {
   #rm1 .tracklist {
     width: 40vw;
+    font-size:3vw ;
+  }
+  #rm1 .mv_button p:nth-child(2){
+    font-size: 4vw;
+  }
+  #rm1 .more .toggle.on {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: stretch;
+    justify-content:space-between ;
+    margin: 0 0 15px 0;
+    padding-left: 3vw;
+    padding-right: 3vw;
   }
 }
+@media (min-width:602px) {
+  #rm1 .more .toggle.on {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+}
+@media (min-width:750px) {
+  #rm1 .more .toggle.on {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+}
+
 @media (min-width:797px) {
   #rm1 .tracklist {
     width: 35vw;
@@ -83,16 +114,19 @@
     padding-bottom:6px ;
   }
 }
-@media (min-width:938px) {
+@media (min-width:930px) {
   #rm1 .tracklist {
     width: 50vw;
-    font-size: 4vw;
+    
   }
   #rm1 .tracklist ul{
     padding-left: 6%;
     padding-right: 6%;
   }
+
 }
+
+/*rm2*/
 @media (max-width:560px) {
   #rm2 .mv_button p {
     font-size: 2vw;
