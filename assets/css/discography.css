@@ -13,7 +13,7 @@ body {
 
 .fa-compact-disc {
   margin: 2% 0.7%;
-  font-size: 3.5vw;
+  
 }
 
 a {
@@ -94,6 +94,7 @@ header img:hover {
 
 .music > i {
   padding-left: 10px ;
+  
 }
 .music {
   padding:2vh 5vw;
@@ -107,7 +108,9 @@ header img:hover {
   margin-bottom: 3%;
  
 }
-
+.fa-compact-disc{
+  font-size: 2.3vw;
+}
 .mixtape {
   margin-top: 20px;
   width: 100%;
@@ -173,7 +176,11 @@ header img:hover {
   padding: 10% 17% ;
   
 }
-
+.mv{
+  height: 44vw;
+  margin-bottom: 10vh;
+  box-sizing: border-boxs;
+}
 /*mv slider*/
 .mv_container {
   position: relative;
@@ -182,6 +189,10 @@ header img:hover {
 
 .mv_button {
   margin: 0  7%;
+  
+}
+.mv_button i {
+  height: 4vw;
 }
 .mv_button div{
   padding-left:5%;
@@ -197,16 +208,13 @@ header img:hover {
   display: none;
 }
 
-.mv {
-  margin-bottom: 10vh;
-  height:48vw;
-}
+
 /*behind 카데고리가 없는 페이지는 다로 margin bottom 을 15vh 로 조정해야 함 */
 
 .slider-container {
   position: relative;
   width: 100%;
-  height: 44vw;
+  height: 40vw;
   padding: 0;
   display: flex;
   box-sizing: border-box;
@@ -218,7 +226,7 @@ header img:hover {
   transition: left .3s ease-in;
   padding: 0;
   margin: 0;
-  
+  height: 100%;
 }
 
 .slide {
@@ -235,7 +243,7 @@ iframe{
   height:39.375vw ;
 }
 .behind{
-  padding: 0 5vw ;
+  padding: 80px 5vw 0 5vw;
   margin: 5vh 0;
   
 }
@@ -279,8 +287,14 @@ footer{
   padding: 0;
  
 }
-/*media query*/
 
+
+@media (min-width:890px) {
+  .mv , .more{
+    margin-top: 30px;
+  }
+  
+}
 @media  (max-width:930px ){
   .music{
     padding:  4%;
@@ -290,19 +304,23 @@ footer{
     height: 35vw;
     margin-bottom:20px;
   }
-  
+
   #lyric_place {
     width: 72vw;
     height: 20vw;
     padding:0 10%;
   
   }
-
+ 
   footer{
     margin-top: 5vh;
   }
 }
-
+@media (max-width:900px) {
+  .behind{
+    padding-top: 30px;
+  }
+}
 @media  (max-width:800px ){
   .header_toggle.on li {
     font-size: 2vw;
@@ -311,14 +329,15 @@ footer{
     padding-top:10px;
     font-size: 2.3vw;
   }
-  .music{
-    padding-left:0 ;
-  }
+ 
   #music_platform{
   margin-left: 40%; 
   }
   .music{
     padding:  5%;
+  }
+  .fa-compact-disc{
+    font-size: 3.5vw;
   }
   .cover {
     width: 32vw;
@@ -341,13 +360,25 @@ footer{
 
 }
 @media (max-width:700px) {
-
+  .behind{
+    margin-top: ;
+  }
   footer{
     font-size: 1vw;
   }
 
 }
-
+@media (max-width:623px) {
+  .behind{
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+@media (max-width:590px) {
+  .behind{
+    margin-top: 15px;
+  }
+}
 @media (max-width:550px) {
   .header_toggle.on li {
     font-size: 1.5vw;
@@ -377,7 +408,7 @@ footer{
     padding:0 20%;
   
   }
-
+  
 }
 
 @media (max-width:460px) {
@@ -388,6 +419,9 @@ footer{
   .header_toggle.on li:nth-child(1) {
     padding-top:10px;
     font-size: 1.2vw;
+  }
+  .mv{
+    margin-bottom: 80px;
   }
   .mv_button p {
     font-size: 1vw ;
@@ -411,6 +445,11 @@ footer{
   }
 
 } 
+@media (max-width:400px) {
+  .mv{
+    margin-bottom: 60px;
+  }
+}
 @media (max-width:350px) {
   header .logo {
     height: 60px;
@@ -451,5 +490,11 @@ footer{
 
   footer{
     font-size: 0.05vw;
+  }
+}
+
+@media (max-width:330px) {
+  .mv{
+    margin-bottom: 50px;
   }
 }
