@@ -9,47 +9,6 @@ function closeOtherToggle(){
   }
 ;
 
-/*header navbar toggle*/
-
-// function toogleHeaderNavbar () {
-//     
-//     const $toggles = document.querySelectorAll('.header_toggle'); // Return NodeList
-//     const $toggleBtn = document.querySelector('.header_toggle_btn'); // Return Element
-  
-//   function doToggle($toggles ,$toggleBtn) {
-    
-//      $toggleBtn.addEventListener('click', function () {
-//           closeOtherToggle();
-//           toggleElements();
-//         });
-     
-//       window.addEventListener('resize', function () {
-//             if (window.innerWidth > 1024) {
-//               offElements();
-//             }
-//           });
-        
-//         function toggleElements() {
-//           [].forEach.call($toggles, function (toggle) {
-//             toggle.classList.toggle('on');
-//           });
-        
-//         }
-//       function offElements() {
-//             [].forEach.call($toggles, function (toggle) {
-//               toggle.classList.remove('on');
-//             });
-  
-//   }
-  
-//   }  
-    
-//     doToggle( $toggles , $toggleBtn ); 
-  
-//     };
-
-// toogleHeaderNavbar ();
-
 // header nav dropdown toggle 
 function toogleHeaderNavbar () {
     let $toggle ;
