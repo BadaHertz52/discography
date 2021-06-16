@@ -38,22 +38,31 @@ header img:hover {
 
 .header_toggle {
   display: none;
-}
+} 
 
 .header_toggle.on {
   display: flex;
+  flex-direction: column;
   list-style: none;
   width: 100%;
   margin: auto 0;
   padding: 0%;
 
 }
-
-.header_toggle.on ul {
+.navbar {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.dropdown{
+  display: flex;
+  flex-direction: column;
+}
+/* .header_toggle.on ul {
   width: 12.5%;
   margin: 0;
   padding-left: 0%;
-}
+} */
 
 .header_toggle.on li {
   list-style: none;
@@ -360,9 +369,7 @@ footer{
 
 }
 @media (max-width:700px) {
-  .behind{
-    margin-top: ;
-  }
+
   footer{
     font-size: 1vw;
   }

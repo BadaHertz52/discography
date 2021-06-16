@@ -11,44 +11,65 @@ function closeOtherToggle(){
 
 /*header navbar toggle*/
 
-function toogleHeaderNavbar () {
-    
-    const $toggles = document.querySelectorAll('.header_toggle'); // Return NodeList
-    const $toggleBtn = document.querySelector('.header_toggle_btn'); // Return Element
+// function toogleHeaderNavbar () {
+//     
+//     const $toggles = document.querySelectorAll('.header_toggle'); // Return NodeList
+//     const $toggleBtn = document.querySelector('.header_toggle_btn'); // Return Element
   
-  function doToggle($toggles ,$toggleBtn) {
+//   function doToggle($toggles ,$toggleBtn) {
     
-     $toggleBtn.addEventListener('click', function () {
-          closeOtherToggle();
-          toggleElements();
-        });
+//      $toggleBtn.addEventListener('click', function () {
+//           closeOtherToggle();
+//           toggleElements();
+//         });
      
-      window.addEventListener('resize', function () {
-            if (window.innerWidth > 1024) {
-              offElements();
-            }
-          });
+//       window.addEventListener('resize', function () {
+//             if (window.innerWidth > 1024) {
+//               offElements();
+//             }
+//           });
         
-        function toggleElements() {
-          [].forEach.call($toggles, function (toggle) {
-            toggle.classList.toggle('on');
-          });
+//         function toggleElements() {
+//           [].forEach.call($toggles, function (toggle) {
+//             toggle.classList.toggle('on');
+//           });
         
-        }
-      function offElements() {
-            [].forEach.call($toggles, function (toggle) {
-              toggle.classList.remove('on');
-            });
+//         }
+//       function offElements() {
+//             [].forEach.call($toggles, function (toggle) {
+//               toggle.classList.remove('on');
+//             });
   
-  }
+//   }
   
-  }  
+//   }  
     
-    doToggle( $toggles , $toggleBtn ); 
+//     doToggle( $toggles , $toggleBtn ); 
   
-    };
+//     };
 
-toogleHeaderNavbar ();
+// toogleHeaderNavbar ();
+
+// header nav dropdown toggle 
+function toogleHeaderNavbar () {
+    let $toggle ;
+    const $toggleBtns = document.querySelectorAll('.navbar .toggle_btn'); // node list 
+    
+    $toggleBtns.forEach( 
+      (btn)=> { 
+        btn.addEventListener('click' , function(){ 
+          closeOtherToggle();
+
+          $toggle = btn.nextElementSibling ;
+          
+          $toggle.classList.toggle('on')
+        } 
+          )
+        }
+      )
+ }
+
+  toogleHeaderNavbar ();
 
 /*music tracklist&lyrics*/
 function ShowLyrics () {
@@ -58,10 +79,10 @@ function ShowLyrics () {
   const $arrayTrackLists = Array.from($trackLists);
   const $lyrics = document.querySelectorAll(".lyric") ;
   
-  const $trackToggleBtns = document.querySelectorAll('.toggle_btn');
+  
   
   function addEventListener() {
-    $trackToggleBtns.forEach(btn => {
+    $trackLists.forEach(btn => {
     
       //클릭 시 해당 곡 가사 보이고, 다른 가사들은 숨김처리 
       btn.addEventListener('click',function
@@ -88,8 +109,17 @@ function ShowLyrics () {
     addEventListener();
   
     };
-  
-ShowLyrics ();
+
+(function do_ShowLyrics () {
+  const lyric_place = document.querySelector('#lyric_place');
+
+
+if (lyric_place){
+  ShowLyrics ();
+}
+})();
+
+
 
 /*more*/
 function toogleMore () {
