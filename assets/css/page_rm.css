@@ -12,12 +12,14 @@
   background-color: rgba(2, 2, 2, 0.493);
   color: #fafafadc ;
 }
+
 #rm1 #music_platform{
   margin-left: 58vw;
   font-size: 4vw;
 }
 #rm1 #music_platform i{
   color:rgba(94, 93, 93, 0.534);
+  font-size: 55px;
 }
 #rm1 #music_platform i:hover{
   color: rgb(2,2,2);
@@ -74,6 +76,20 @@
 
 /*미디어 쿼리*/
 /*rm1*/
+@media (min-width:460px) {
+  .behind{
+    margin-top:80px;
+  }
+}  
+@media (max-width:500px) {
+  #rm1 .mv_button p {
+    font-size:11px ;
+  }
+  #rm1 .mv_button p:nth-child(2){
+    font-size: 20px ;
+  }
+}
+
 @media (min-width:520px) {
   #rm1 .tracklist {
     width: 40vw;
@@ -108,51 +124,23 @@
 @media (min-width:797px) {
   #rm1 .tracklist {
     width: 35vw;
-    
+    font-size: 25px;
   }
   #rm1 .tracklist li {
     padding-bottom:6px ;
   }
 }
+
 @media (min-width:930px) {
   #rm1 .tracklist {
-    width: 50vw;
+    width: 40vw;
+    font-size: 30px;
     
   }
   #rm1 .tracklist ul{
     padding-left: 6%;
     padding-right: 6%;
   }
-
-}
-
-/*rm2*/
-@media (max-width:560px) {
-  #rm2 .mv_button p {
-    font-size: 2vw;
-  }
-  #rm2 .behind {
-    margin: 3vh 0 ;
-  }
-  
-}
-@media (max-width:340px) {
-  #rm2 #lyric_place{
-    padding:0 15%;
-  }
-  #rm2 .mv_button div {
-    padding: 0;
-  }
-  #rm2 .mv_button p{
-    margin: 2px;
-    margin-bottom: 5px;
-    font-size:1vw;
-  }
-}
-@media (max-width:300px) {
-  
- 
-
 
 }
 
@@ -230,10 +218,14 @@
 }
 
 /*미디어 쿼리*/
-@media (min-width:1024px) {
+
+@media (min-width:930px) {
   
-  
+  #rm2 .mv_button p {
+    font-size:2vw;
+  }
 }
+
 @media (max-width:930px) {
   #rm2 .tracklist .toggle_btn {
     font-size: 3vw;
@@ -245,7 +237,9 @@
   #rm2 #lyric_place{
     padding:0 20%;
   }
+  
 }
+
 @media (max-width:700px) {
   #rm2 .more .toggle.on{
     flex-direction: column;
@@ -260,9 +254,7 @@
   #rm2 .mv_button p {
     font-size: 2vw;
   }
-  #rm2 .behind {
-    margin: 3vh 0 ;
-  }
+ 
   
 }
 @media (max-width:340px) {
