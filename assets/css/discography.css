@@ -31,6 +31,7 @@ header{
 }
 header .logo {
   margin:5% 0% 0% 0%;
+  padding-bottom: 10px;
   
 }
 
@@ -63,7 +64,7 @@ header img:hover {
 
 .dropdown .toggle.on li a:any-link {
   text-decoration: none;
-  color: #303030;
+  
 }
 
 /*inner*/
@@ -349,7 +350,7 @@ footer{
 @media (min-width:700px) {
   .dropdown a ,
   .dropdown .toggle.on a{
-  font-size: 2.5vw;
+  font-size: 2.2vw;
   }
 }
 @media (max-width:700px) {
@@ -399,7 +400,11 @@ footer{
   }
   
 }
-
+@media (min-width:700px) {
+  header .logo img{
+    height: 60px;
+  }
+}
 @media (max-width:460px) {
   .dropdown a ,
   .dropdown .toggle.on a{
@@ -436,10 +441,11 @@ footer{
     margin-bottom: 60px;
   }
 }
+
 @media (max-width:350px) {
   header .logo {
     height: 60px;
-    padding-bottom: 10px;
+    
   }
   header .logo a  {
     font-size: 50px;
