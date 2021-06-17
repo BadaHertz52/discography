@@ -10,7 +10,9 @@ body {
 .toggle.on {
   display: block;
 }
-
+.toggle.on a:hover{
+  font-weight: bolder;
+}
 .fa-compact-disc {
   margin: 2% 0.7%;
   
@@ -35,20 +37,6 @@ header .logo {
 header img:hover {
   border-bottom: 2px solid #565d8f;
 }
-
-.header_toggle {
-  display: none;
-} 
-
-.header_toggle.on {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  width: 100%;
-  margin: auto 0;
-  padding: 0%;
-
-}
 .navbar {
   display: flex;
   flex-wrap: nowrap;
@@ -58,36 +46,24 @@ header img:hover {
   display: flex;
   flex-direction: column;
 }
-/* .header_toggle.on ul {
-  width: 12.5%;
-  margin: 0;
-  padding-left: 0%;
-} */
+.dropdown a{
+  text-align: center;
+}
+.dropdown a:hover {
+  font-weight: bolder;
+}
+.dropdown .toggle.on  {
+  padding-left: 0;
+  margin: 8px auto;
+}
 
-.header_toggle.on li {
+.dropdown .toggle.on li {
   list-style: none;
-  padding-bottom: 5px;
-
 }
 
-.header_toggle.on li:nth-child(1) {
-  height: 30px;
-  margin-bottom: 5px;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.header_toggle.on li a {
-  font-size: 100%;
-}
-
-.header_toggle.on li a:any-link {
+.dropdown .toggle.on li a:any-link {
   text-decoration: none;
   color: #303030;
-}
-
-.header_toggle.on li a:hover {
-  font-weight: bolder;
 }
 
 /*inner*/
@@ -297,13 +273,9 @@ footer{
  
 }
 
+/* media query */ 
 
-@media (min-width:890px) {
-  .mv , .more{
-    margin-top: 30px;
-  }
-  
-}
+
 @media  (max-width:930px ){
   .music{
     padding:  4%;
@@ -325,20 +297,26 @@ footer{
     margin-top: 5vh;
   }
 }
+
 @media (max-width:900px) {
   .behind{
     padding-top: 30px;
   }
+
 }
-@media  (max-width:800px ){
-  .header_toggle.on li {
-    font-size: 2vw;
+@media (min-width:890px) {
+  .mv , .more{
+    margin-top: 30px;
   }
-  .header_toggle.on li:nth-child(1) {
-    padding-top:10px;
-    font-size: 2.3vw;
+  
+}
+@media (min-width:800px) {
+  .dropdown a ,
+  .dropdown .toggle.on a{
+  font-size: 3vw;
   }
- 
+}
+@media  (max-width:800px ){ 
   #music_platform{
   margin-left: 40%; 
   }
@@ -368,8 +346,17 @@ footer{
   }
 
 }
+@media (min-width:700px) {
+  .dropdown a ,
+  .dropdown .toggle.on a{
+  font-size: 2.5vw;
+  }
+}
 @media (max-width:700px) {
-
+  .dropdown a ,
+  .dropdown .toggle.on a{
+  font-size: 3.5vw;
+  }
   footer{
     font-size: 1vw;
   }
@@ -386,14 +373,9 @@ footer{
     margin-top: 15px;
   }
 }
+
 @media (max-width:550px) {
-  .header_toggle.on li {
-    font-size: 1.5vw;
-  }
-  .header_toggle.on li:nth-child(1) {
-    padding-top:10px;
-    font-size: 2vw;
-  }
+  
   .music{
     padding: 2%;
     margin-bottom: 6%;
@@ -419,13 +401,9 @@ footer{
 }
 
 @media (max-width:460px) {
-  
-  .header_toggle.on li {
-    font-size: 1.5vw;
-  }
-  .header_toggle.on li:nth-child(1) {
-    padding-top:10px;
-    font-size: 1.2vw;
+  .dropdown a ,
+  .dropdown .toggle.on a{
+  font-size: 3.3vw;
   }
   .mv{
     margin-bottom: 80px;
@@ -453,6 +431,7 @@ footer{
 
 } 
 @media (max-width:400px) {
+
   .mv{
     margin-bottom: 60px;
   }
@@ -460,10 +439,11 @@ footer{
 @media (max-width:350px) {
   header .logo {
     height: 60px;
+    padding-bottom: 10px;
   }
   header .logo a  {
     font-size: 50px;
-    padding-bottom: 5px;
+    
   }
   header img {
     height: 43px;
@@ -471,26 +451,10 @@ footer{
     margin: 8px 0 10px 10px ;
     padding: 0;
   }
-  .header_toggle.on ul:nth-child(5) li {
-    padding-left: 5px;
-    padding-right: 5px;
-  
+  .dropdown{
+    padding: 10px auto;
   }
-  .header_toggle.on ul:nth-child(7) li:nth-child(1){
-    padding-left:10px ;
-  }
-  .header_toggle.on ul:nth-child(8) li {  padding-left: 10px ;
-  }
-  .header_toggle.on li {
-    font-size: 0.5px;
-  }
-  .header_toggle.on li:nth-child(1) {
-    font-size: 5px;
-    padding-left: 0.1px;
-  }
-  .mv_button p {
-    font-size: 0.5px ;
-  }
+
   .more .twitter {
     font-size: 0.005vw;
   }
