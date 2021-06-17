@@ -30,9 +30,11 @@ header{
   padding: 0%;
 }
 header .logo {
-  margin:5% 0% 0% 0%;
+  margin:5% 0 0 0;
+
+}
+header .logo img{
   padding-bottom: 10px;
-  
 }
 
 header img:hover {
@@ -42,6 +44,7 @@ header img:hover {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
+  padding-bottom: 8px ; 
 }
 .dropdown{
   display: flex;
@@ -60,6 +63,7 @@ header img:hover {
 
 .dropdown .toggle.on li {
   list-style: none;
+  margin:10px auto ;
 }
 
 .dropdown .toggle.on li a:any-link {
