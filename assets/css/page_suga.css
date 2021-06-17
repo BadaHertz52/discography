@@ -6,22 +6,17 @@
 #suga1  a {
   color:  #242423;
 }
-
-#suga1 header .logo {
-  background-color: rgba(83, 109, 136, 0.979);
-}
-#suga1 .header_toggle.on{
-  background-color: rgba(83, 109, 136, 0.979) ;
-}
-#suga1 .header_toggle.on li:nth-child(1){
-  background-color:rgb(66, 87, 110) ;
-  color: #f5f1f1 ;
-}
-#suga1 .header_toggle.on li a {
-  color: rgb(212, 215, 230) ;
-  
+/*navbar*/
+#suga1 header .logo, #suga1 .navbar{
+  background-color: #5d708bcc
 }
 
+#suga1 .navbar .toggle_btn:hover ,
+#suga1 .navbar .toggle a:hover{
+    background-color:  rgba(41, 41, 41, 0.815);
+    color:#fafafafb
+  }
+/*music*/
 #suga1 #music_platform i:hover{
   color:rgba(83, 109, 136, 0.979);
 }
@@ -41,7 +36,6 @@
   font-size: 1.5vw;
 }
 #suga1  pre {
-  
   font-family: 'Do Hyeon', sans-serif;
   font-size: 1.2vw;
   font-weight: lighter;
@@ -56,6 +50,11 @@
 #suga1 .tracklist  .toggle_btn:hover{
   font-weight: bolder;
 } 
+
+#suga1 .lyric pre{
+  padding-top: 8% ;
+}
+
 
 #suga1 i ,#suga1 .mv_button div ,#suga1 #prev ,#suga1 #next{
   color:rgba(169, 173, 177, 0.979) ;
@@ -102,15 +101,29 @@
     margin-top:15%;
   }
 }
-@media (max-width:930px) {
-  #suga1 .tracklist .toggle_btn {
-    font-size: 2vw;
+@media (max-width:1000px) {
+  #suga1 .more{
+    margin-top: 15vw;
   }
-  #suga1 .lyric pre{
+}
+@media (min-width:928px) {
+  #suga1 .tracklist{
+    width: 17vw;
+  }
+  #suga1 #lyric_place {
+    width: 30vw;
+  }
+}
+@media (max-width:928px) {
+  #suga1 .tracklist div{
+    
     font-size: 2.2vw;
   }
-  #suga1 #lyric_place{
-    padding: 3%  10%;
+  #suga1  pre {
+    
+    font-size: 2.2vw;
+    font-weight:initial;
+    
   }
 }
 @media (max-width:700px) {
@@ -123,7 +136,12 @@
     font-size: 2.5vw;
   }
 }
-
+@media (max-width:450px) {
+  #suga1 #lyric_place{
+    padding-left: 7%;
+    padding-right: 6%;
+  }
+}
 @media (max-width:350px) {
   #suga1 .tracklist .toggle_btn {
     font-size: 2vw;
@@ -132,10 +150,7 @@
     font-size: 7px;
     font-weight: lighter;
   }
-  #suga1 #lyric_place{
-    padding-left: 3%;
-    padding-right: 3%;
-  }
+
 }
 @media (max-width:300px) {
   #suga1 .mv_button div {
