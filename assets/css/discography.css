@@ -355,7 +355,7 @@ footer{
 @media (max-width:700px) {
   .dropdown a ,
   .dropdown .toggle.on a{
-  font-size: 3.5vw;
+  font-size: 3vw;
   }
   footer{
     font-size: 1vw;
