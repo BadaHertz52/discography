@@ -2,15 +2,14 @@
 #rm1 {
   background-color:#fafafadc
 }
-#rm1 header img{
-  margin-top: 10px;
+  /*navbar*/
+#rm1 .navbar {
+background-color: rgba(94, 93, 93, 0.185); ;
 }
-#rm1 .header_toggle.on{
-  background-color: rgba(117, 116, 116, 0.226);
-}
-#rm1 .header_toggle.on li:nth-child(1){
-  background-color: rgba(2, 2, 2, 0.493);
-  color: #fafafadc ;
+#rm1 .navbar .toggle_btn:hover ,
+#rm1 .navbar .toggle a:hover{
+  background-color:  rgba(41, 41, 41, 0.815);
+  color:#fafafafb
 }
 
 #rm1 #music_platform{
@@ -19,7 +18,7 @@
 }
 #rm1 #music_platform i{
   color:rgba(94, 93, 93, 0.534);
-  font-size: 55px;
+  font-size: 5vw;
 }
 #rm1 #music_platform i:hover{
   color: rgb(2,2,2);
@@ -114,6 +113,7 @@
     padding-right: 10vw;
   }
 }
+
 @media (min-width:750px) {
   #rm1 .more .toggle.on {
     padding-left: 3vw;
@@ -147,37 +147,33 @@
 
 
 /* rm2 */
-#rm2 {
-  background-color:#c9c9c9af
+#rm2 ,#rm2 .logo {
+  background-color:#dfdfdf71
 }
-#rm2 .header_toggle.on{
-  background-color: rgba(139, 137, 137, 0.027);
-}
-#rm2 .header_toggle.on li:nth-child(1){
-  background-color: rgba(2, 2, 2, 0.185);
-  color: #ffff ;
-}
-
-
+#rm1 .navbar {
+  background-color: rgba(94, 93, 93, 0.185); ;
+  }
 #rm2 #music_platform i{
   color: #6d6a6a;
 }
 #rm2 #music_platform i:hover{
-  color: #000000;
+  color: #201e1a;
 }
 
 #rm2 .tracklist{
-  background-color:#fafafa3a;
+  background-color:#fcfcf6;
 }
 
 #rm2 #lyric_place{
-  background-color:#fafafa3a;
+  background-color:#fcfcf6;
   padding: 0;
 }
 #rm2 .tracklist  .toggle_btn:hover{
-  color: #969595;
+  font-weight: bolder;
+ 
 } 
-#rm2 .toggle_btn{
+#rm2 .tracklist .toggle_btn{
+
   font-family: 'Nanum Brush Script', cursive;
   font-size: 2vw;
 }
@@ -185,7 +181,8 @@
   position: relative;
   font-family: 'Gaegu', cursive;
   font-size: 1.5vw;
-  color:#242423;
+  color:#201e1a;
+  padding-top: 10px;
 }
 #rm2 #next , #rm2 #prev{
   color:#272725bb;
