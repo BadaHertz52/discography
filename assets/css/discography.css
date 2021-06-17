@@ -44,7 +44,7 @@ header img:hover {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
-  padding-bottom: 8px ; 
+  padding: 8px 0 ; 
 }
 .dropdown{
   display: flex;
@@ -70,6 +70,11 @@ header img:hover {
   text-decoration: none;
   
 }
+
+.dropdown a ,
+.dropdown .toggle.on a{
+  font-size: 1.5vw;
+  }
 
 /*inner*/
 .inner {
@@ -279,8 +284,6 @@ footer{
 }
 
 /* media query */ 
-
-
 @media  (max-width:930px ){
   .music{
     padding:  4%;
@@ -307,7 +310,10 @@ footer{
   .behind{
     padding-top: 30px;
   }
-
+  .dropdown a ,
+    .dropdown .toggle.on a{
+    font-size: 2vw;
+    }
 }
 @media (min-width:890px) {
   .mv , .more{
@@ -315,12 +321,7 @@ footer{
   }
   
 }
-@media (min-width:800px) {
-  .dropdown a ,
-  .dropdown .toggle.on a{
-  font-size: 3vw;
-  }
-}
+
 @media  (max-width:800px ){ 
   #music_platform{
   margin-left: 40%; 
@@ -351,12 +352,7 @@ footer{
   }
 
 }
-@media (min-width:700px) {
-  .dropdown a ,
-  .dropdown .toggle.on a{
-  font-size: 2.2vw;
-  }
-}
+
 @media (max-width:700px) {
   .dropdown a ,
   .dropdown .toggle.on a{
