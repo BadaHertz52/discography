@@ -28,13 +28,13 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
-#suga1 .tracklist li {
-  margin-bottom: 2%;
-}
-#suga1 .tracklist div{
+#suga1 .tracklist .toggle_btn {
+  margin-bottom: 2%;  
+  padding-bottom: 3px;
   font-family: 'Do Hyeon', sans-serif;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
 }
+
 #suga1  pre {
   font-family: 'Do Hyeon', sans-serif;
   font-size: 1.2vw;
