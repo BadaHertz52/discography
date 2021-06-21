@@ -11,7 +11,7 @@ background-color: rgba(94, 93, 93, 0.185); ;
   background-color:  rgba(41, 41, 41, 0.815);
   color:#fafafafb
 }
-
+/*music*/
 #rm1 #music_platform{
   margin-left: 58vw;
   font-size: 4vw;
@@ -38,14 +38,14 @@ background-color: rgba(94, 93, 93, 0.185); ;
 #rm1 #next , #rm2 #prev{
   color:rgba(94, 93, 93, 0.616);
 }
-#rm1 .mv_button div p:nth-of-type(2n+1) #next:hover ,
-#rm1 .mv_button div p:nth-of-type(2n+1) #prev:hover{
+#rm1 .slider-button div p:nth-of-type(2n+1) #next:hover ,
+#rm1 .slider-button div p:nth-of-type(2n+1) #prev:hover{
   color:rgb(2,2,2);
 }
-#rm1 .mv_button p{
+#rm1 .slider-button p{
   font-size: 2.5vw;
 }
-#rm1 .mv_button p:nth-child(2){
+#rm1 .slider-button p:nth-child(2){
   font-size:6vw ;
 }
 #rm1 .more{
@@ -81,10 +81,10 @@ background-color: rgba(94, 93, 93, 0.185); ;
   }
 }  
 @media (max-width:500px) {
-  #rm1 .mv_button p {
+  #rm1 .slider-button p {
     font-size:11px ;
   }
-  #rm1 .mv_button p:nth-child(2){
+  #rm1 .slider-button p:nth-child(2){
     font-size: 20px ;
   }
 }
@@ -94,7 +94,7 @@ background-color: rgba(94, 93, 93, 0.185); ;
     width: 40vw;
     font-size:3vw ;
   }
-  #rm1 .mv_button p:nth-child(2){
+  #rm1 .slider-button p:nth-child(2){
     font-size: 4vw;
   }
   #rm1 .more .toggle.on {
@@ -187,8 +187,8 @@ background-color: rgba(94, 93, 93, 0.185); ;
 #rm2 #next , #rm2 #prev{
   color:#272725bb;
 }
-#rm2 .mv_button div p:nth-of-type(2n+1) #next:hover ,
-#rm2 .mv_button div p:nth-of-type(2n+1) #prev:hover{
+#rm2 .slider-button div p:nth-of-type(2n+1) #next:hover ,
+#rm2 .slider-button div p:nth-of-type(2n+1) #prev:hover{
   color:#d4c259;
 }
 
@@ -218,7 +218,7 @@ background-color: rgba(94, 93, 93, 0.185); ;
 
 @media (min-width:930px) {
   
-  #rm2 .mv_button p {
+  #rm2 .slider-button p {
     font-size:2vw;
   }
 }
@@ -248,7 +248,7 @@ background-color: rgba(94, 93, 93, 0.185); ;
   }
 }
 @media (max-width:560px) {
-  #rm2 .mv_button p {
+  #rm2 .slider-button p {
     font-size: 2vw;
   }
  
@@ -258,10 +258,10 @@ background-color: rgba(94, 93, 93, 0.185); ;
   #rm2 #lyric_place{
     padding:0 15%;
   }
-  #rm2 .mv_button div {
+  #rm2 .slider-button div {
     padding: 0;
   }
-  #rm2 .mv_button p{
+  #rm2 .slider-button p{
     margin: 2px;
     margin-bottom: 5px;
     font-size:1vw;

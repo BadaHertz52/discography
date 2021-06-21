@@ -177,24 +177,24 @@ header img:hover {
   box-sizing: border-boxs;
 }
 /*mv slider*/
-.mv_container {
+.slider-wrapper {
   position: relative;
 
 }
 
-.mv_button {
+.slider-button {
   margin: 0  7%;
   
 }
-.mv_button i {
+.slider-button i {
   height: 4vw;
 }
-.mv_button div{
+.slider-button div{
   padding-left:5%;
   display: flex;
   justify-content: center;
 }
-.mv_button div p{
+.slider-button div p{
   margin: 2vw 5%;
 }
 
@@ -413,7 +413,7 @@ footer{
   .mv{
     margin-bottom: 80px;
   }
-  .mv_button p {
+  .slider-button p {
     font-size: 1vw ;
   }
 

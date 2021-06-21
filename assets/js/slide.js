@@ -1,5 +1,5 @@
 //변수 지정
-const sliderWrapper = document.getElementsByClassName('mv_container');
+const sliderWrapper = document.getElementsByClassName('slider-wrapper');
 const sliderContainer = document.getElementsByClassName('slider-container');
 const slides = document.getElementsByClassName('slide');
 const slideCount = slides.length ;
