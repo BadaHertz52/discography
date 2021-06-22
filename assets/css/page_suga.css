@@ -167,10 +167,172 @@
   #suga1 .slider-button div p:nth-child(3) {
     margin:  0;
   }
-
- 
-
 }
 
+/*SUGA2 */
+@font-face {
+  font-family:'NanumMyeongjo' ;
+  src: url(../font/NanumMyeongjo.ttf);
+}
+#suga2 .tracklist li ,
+#suga2 .lyric pre{
+  font-family: 'NanumMyeongjo';
+}
+#suga2 .behind iframe{
+  width:31.5vw ;
+  height:17.71875vw ;
+  padding-bottom: 6vw;
+  
+}
+#suga2 .behind div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+#suga2 .behind{
+  margin-bottom: 0;
+}
+#suga2 .more {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 0;
+  
+}
+#suga2 .photo{
+  height: 25vw;
+  position: relative;
+}
+#suga2 .photo .slider-button a {
+  color:#595a58a1 ;
+  font-size: 1.5rem;
+}
+#suga2 .photo .slider-button a:hover{
+  color:#00171fb2
+}
+#suga2 .photo .slider-button{
+  display: flex;
+  justify-content: space-between;
+}
+#suga2 .photo .slider-button p{
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
 
+#suga2 .photo .slide {
+  display: grid;
+  grid-template-rows: repeat(1, 12vw);
+  grid-template-columns: repeat(3 ,22vw);
+  column-gap: 1.3vw;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+} 
+#suga2 .photo .slide:nth-child(1),
+#suga2 .photo .slide:nth-child(2)
+  {
+  grid-template-rows: repeat(1, 14vw);
+  grid-template-columns: repeat(5 ,10vw);
+  column-gap: 5vw;
+}
+#suga2 .photo .slide:nth-child(2){
+  column-gap: 9vw;
+}
+#suga2 .photo img {
+  width: 100%;
+  height: 100%;
+  padding-left: 10vws;
+}
+#suga2 .twitter .toggle.on{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+#suga2 .twitter .toggle.on p{
+  font-size: 1rem ;
+}
+@media (max-width:934px) {
+  #suga2 .lyric pre {
+    font-size: 1rem;
+  }
+}
+@media (max-width:800px) {
+  
+  #suga2 .twitter{
+    margin-top: 30px;
+  }
+  #suga2 .twitter .toggle.on p{
+    font-size: 0.5rem;
+  }
+}
+@media (min-width:750px) {
+  #suga2 .twitter{
+    margin-top: 40px;
+  }
+}
+@media (min-width: 700px){
+#suga2 .behind {
+    padding-top: 10px;
+}
+}
+@media (max-width:700px) {
+  #suga2 .tracklist li{
+    font-size: 0.8rem;
+  }
 
+  #suga2 .lyric pre{
+    font-size: 0.8rem;
+  }
+}
+@media (max-width:600px) {
+  #suga2 .twitter .toggle.on{
+    padding-left: 5vw;
+    display: grid;
+    grid-template-columns: repeat(2 , 35vw);
+  }
+  #suga2 .twitter .toggle.on p{
+    font-size: 0.7rem;
+  }
+}
+@media (max-width:550px) {
+  #suga2 #lyric_place{
+    padding-left:10vw;
+  }
+  #suga2 .lyric pre{
+    font-size: 0.6rem;
+  }
+}
+@media (max-width:480px) {
+  #suga2 .photo .slider-button a{
+    font-size: 0.8rem;
+  }
+  #suga2 .twitter .toggle.on{
+    padding-left: 1.5vw;
+  }
+  #suga2 .tracklist li{
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width:340px) {
+  #suga2 .twitter .toggle.on{
+    padding-left:  20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #suga2 .tracklist ul{
+    padding: 0;
+  }
+  #suga2 .tracklist li{
+    font-size: 0.5vw;
+  }
+  #suga2 #lyric_place{
+    padding-left: 3vw;
+  }
+  #suga2 .lyric pre{
+    font-size: 0.3rem;
+  }
+}
