@@ -55,26 +55,38 @@ background-color: rgba(94, 93, 93, 0.185); ;
   width: 100%;
 }
 #rm1 .more .toggle.on  {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: 5% 20%;
+  
   padding-left: 8vw;
+  display: grid;
+  grid-template-columns: repeat(3 , 25vw);
   
 }
 
 #rm1 .more .toggle.on a {
   color: rgb(94, 93, 93);
+  font-size: 1.2rem;
 }
 #rm1 .more .toggle.on a:hover {
-  font-weight: bolder;
+  color: #201e1a;
 }
-#rm1 .more .toggle.on p {
-  margin: 0 4%;
-}
-
 /*미디어 쿼리*/
 /*rm1*/
+@media (max-width:380px) {
+  #rm1 .more .toggle.on {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 5vw;
+    padding-left: 20vw;
+    height: 30vw;
+    overflow-y: scroll;
+  }
+
+  #rm1 .more p {
+    margin: 1vw 0;
+    padding: 0;
+  }
+
 @media (min-width:460px) {
   .behind{
     margin-top:80px;
@@ -97,23 +109,19 @@ background-color: rgba(94, 93, 93, 0.185); ;
   #rm1 .slider-button p:nth-child(2){
     font-size: 4vw;
   }
-  #rm1 .more .toggle.on {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-items: stretch;
-    justify-content:space-between ;
-    margin: 0 0 15px 0;
-    padding-left: 3vw;
-    padding-right: 3vw;
-  }
-}
-@media (min-width:602px) {
-  #rm1 .more .toggle.on {
-    padding-left: 10vw;
-    padding-right: 10vw;
-  }
-}
 
+}
+@media (max-width:544px) {
+  #rm1 .more .toggle.on {
+    grid-template-columns: repeat(2, 33vw);
+    
+  }
+}
+@media (max-width:760px) {
+  #rm1 .more .toggle.on a{
+    font-size: 1rem;
+  }
+}
 @media (min-width:750px) {
   #rm1 .more .toggle.on {
     padding-left: 3vw;
@@ -141,7 +149,6 @@ background-color: rgba(94, 93, 93, 0.185); ;
     padding-left: 6%;
     padding-right: 6%;
   }
-
 }
 
 
@@ -215,9 +222,12 @@ background-color: rgba(94, 93, 93, 0.185); ;
 }
 
 /*미디어 쿼리*/
-
+@media (min-width:1350px) {
+  #rm2 .behind{
+    padding-top: 100px ;
+  }
+}
 @media (min-width:930px) {
-  
   #rm2 .slider-button p {
     font-size:2vw;
   }
@@ -236,11 +246,15 @@ background-color: rgba(94, 93, 93, 0.185); ;
   }
   
 }
-
+@media (min-width:769px) {
+  #rm2 .vlive {
+    padding-top:5%
+  }
+}
 @media (max-width:700px) {
   #rm2 .more .toggle.on{
-    flex-direction: column;
-    padding: 0 25%;
+    display: grid;
+    grid-template-columns: repeat(2 , 30vw);
   }
   #rm2 .more .toggle.on p {
     padding-top:8px ;
@@ -251,8 +265,17 @@ background-color: rgba(94, 93, 93, 0.185); ;
   #rm2 .slider-button p {
     font-size: 2vw;
   }
- 
-  
+}
+@media (max-width:370px) {
+  #rm2 .more .toggle.on{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 20vw;
+  }
+  #rm2 .more .toggle.on a{
+    font-size: 3vw;
+  }
 }
 @media (max-width:340px) {
   #rm2 #lyric_place{
@@ -268,10 +291,9 @@ background-color: rgba(94, 93, 93, 0.185); ;
   }
 }
 @media (max-width:300px) {
-  
- 
-
-
+  #rm2 .more .toggle.on{
+    padding-left: 13vw;
+  }
 }
 
 
