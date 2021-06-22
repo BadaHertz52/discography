@@ -103,8 +103,11 @@ header img:hover {
   margin-bottom: 3%;
  
 }
-.fa-compact-disc{
+.fa-compact-disc {
   font-size: 2.3vw;
+}
+.fa-hashtag{
+  font-size: 4vw;
 }
 .mixtape {
   margin-top: 20px;
@@ -209,7 +212,6 @@ header img:hover {
 .slider-container {
   position: relative;
   width: 100%;
-  
   padding: 0;
   display: flex;
   box-sizing: border-box;
@@ -221,7 +223,7 @@ header img:hover {
   transition: left .3s ease-in;
   padding: 0;
   margin: 0;
-
+  
 }
 
 .slide {
@@ -263,10 +265,8 @@ iframe{
   width: 70vw;
   margin: 0% 7%;
 }
-
-.more .twitter img{
-  width: 7vw;
-  height: auto;
+.more .twitter .toggle.on{
+  padding-top: 1.5rem;
 }
 .more .toggle {
   display: none;
@@ -332,7 +332,11 @@ footer{
   }
   
 }
-
+@media (min-width:806px) {
+  .fa-hashtag{
+    font-size: 2.5vw;
+  }
+}
 @media  (max-width:800px ){ 
   #music_platform{
   margin-left: 40%; 
@@ -385,7 +389,11 @@ footer{
     margin-top: 15px;
   }
 }
-
+@media (max-width:540px) {
+  .fa-hashtag{
+    font-size: 3vw;
+  }
+}
 @media (max-width:550px) {
   
   .music{
@@ -484,5 +492,8 @@ footer{
 @media (max-width:330px) {
   .mv{
     margin-bottom: 50px;
+  }
+  footer p{
+    font-size:0.03vw ;
   }
 }
