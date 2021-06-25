@@ -8,24 +8,22 @@ function closeOtherToggle(){
     ;
   }
 ;
-
-// header nav dropdown toggle 
-function toogleHeaderNavbar () {
-    let $toggle ;
-    const $toggleBtns = document.querySelectorAll('.navbar .toggle_btn'); // node list 
-    
-    $toggleBtns.forEach( 
+function doDropwoun (toggleBtns){
+      toggleBtns.forEach( 
       (btn)=> { 
         btn.addEventListener('click' , function(){ 
           closeOtherToggle();
-
-          $toggle = btn.nextElementSibling ;
-          
-          $toggle.classList.toggle('on')
+          const toggle = btn.nextElementSibling ;
+          toggle.classList.toggle('on')
         } 
           )
         }
       )
+}
+// header nav dropdown toggle 
+function toogleHeaderNavbar () {
+    const $toggleBtns = document.querySelectorAll('.navbar .toggle_btn'); // node list 
+    doDropwoun($toggleBtns);
  }
 
   toogleHeaderNavbar ();
@@ -78,16 +76,22 @@ if (lyric_place){
 }
 })();
 
+/* music_platform*/
+function togglePlatform(){
+  const $toggleBtns = document.querySelectorAll('#music_platform .toggle_btn');
+  doDropwoun($toggleBtns)
+}
 
+togglePlatform();
 
 /*more*/
 function toogleMore () {
 
     const $toggle = document.querySelector('.more .toggle'); 
     const $toggleBtn = document.querySelector('.more .toggle_btn');
-  
+  console.log($toggle, $toggleBtn);
   function doToggle($toggle ,$toggleBtn) {
-  
+    
      $toggleBtn.addEventListener('click', function () {
        $toggle.classList.toggle('on');
         });
