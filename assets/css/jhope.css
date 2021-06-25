@@ -1,5 +1,17 @@
 /*jhop1*/
+
+#jhope1 header img:hover{
+  border-bottom-color:rgb(10, 204, 191) ;
+}
+#jhope1 a:hover,
+#jhope1  .toggle_btn:hover{
+  color: rgb(10, 204, 191);
+  font-weight: bold;
+}
+
 /*music*/
+
+
 #jhope1 .mixtape {
   display: flex;
   flex-direction: column;
@@ -22,7 +34,7 @@
   justify-content: space-between;
   height: 20vw;
   margin-top: 2rem;
-  background-color: rgba(48, 203, 223, 0.116);
+ 
 }
 #jhope1 .tracklist{
   width: 24vw ;
@@ -51,9 +63,7 @@
 #jhope1 .behind div {
   padding-top: 2vw;
 }
-#jhope1 .behind div img:hover {
-  background-color: rgba(179, 182, 181, 0 .849);
-}
+
 #jhope1 .behind div:nth-child(2) a ,
 #jhope1 .behind div:nth-child(3) a{
   display: block;
