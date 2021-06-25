@@ -189,13 +189,13 @@
 #suga2 .navbar .toggle_btn:hover ,
 #suga2 .navbar .toggle a:hover,
 #suga2 .tracklist .toggle_btn:hover,
-#suga2 .twitter a:hover{
+#suga2 .twitter .toggle_btn:hover{
     background-color:  rgba(19, 19, 19, 0.842);
     color:#ffff
   }
 #suga2 .tracklist .toggle_btn:hover,
 #suga2 .twitter a:hover{
-  padding-top: 3px;
+  padding:10px 6px 6px 6px;
   font-weight: 500;
 }
 #suga2 #music_platform i:hover,
@@ -203,7 +203,6 @@
 #suga2 #next:hover{
   color:rgb(175, 174, 174)
 }
-
 
 #suga2 .behind{
   padding-top: 0;
@@ -235,6 +234,9 @@
   height: 25vw;
   position: relative;
 }
+#suga .photo .slider-wrapper{
+  height: 22vw;
+}
 #suga2 .photo .slider-button a {
   
   font-size: 1.5rem;
@@ -255,7 +257,7 @@
   grid-template-columns: repeat(3 ,22vw);
   column-gap: 1.3vw;
   width: 100%;
-  height: 100%;
+  height:15vw;
   padding: 0;
   border: 0;
 } 
@@ -278,6 +280,9 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+}
+#suga2 .twitter .toggle.on a:hover{
+  font-weight: bolder;
 }
 #suga2 .twitter .toggle.on p{
   font-size: 1rem ;
@@ -347,10 +352,14 @@
 
 @media (max-width:340px) {
   #suga2 .twitter .toggle.on{
-    padding-left:  20vw;
+    padding-left: 16vw;
+    padding-top: 0.8rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+  #suga2 .twitter .toggle.on p{
+    font-size: 0.3rem;
   }
   #suga2 .tracklist ul{
     padding: 0;
