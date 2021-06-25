@@ -1,8 +1,5 @@
 
-body {
-  overflow-x: hidden;
-}
-
+/*공통 기능*/
 .toggle {
   display: none;
 }
@@ -10,17 +7,22 @@ body {
 .toggle.on {
   display: block;
 }
-.toggle.on a:hover{
-  font-weight: bolder;
-}
+
 .fa-compact-disc {
-  margin: 2% 0.7%;
-  
+  margin: 2% 0.7%; 
 }
 
 a {
-  text-decoration: none;
-  color: #242423;
+  text-decoration: none; 
+  color: rgb(7, 7, 7) ;
+}
+
+a:hover{
+  font-weight: bolder;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 /*header-nav*/
@@ -38,7 +40,7 @@ header .logo img{
 }
 
 header img:hover {
-  border-bottom: 2px solid #565d8f;
+  border-bottom: 2px solid ;
 }
 .navbar {
   display: flex;
@@ -53,9 +55,7 @@ header img:hover {
 .dropdown a{
   text-align: center;
 }
-.dropdown a:hover {
-  font-weight: bolder;
-}
+
 .dropdown .toggle.on  {
   padding-left: 0;
   margin: 8px auto;
@@ -68,7 +68,6 @@ header img:hover {
 
 .dropdown .toggle.on li a:any-link {
   text-decoration: none;
-  
 }
 
 .dropdown a ,
@@ -86,7 +85,9 @@ header img:hover {
   width: 80%;
   height: 100%;
 }
-
+li{
+  list-style: none;
+}
 .music > i {
   padding-left: 10px ;
   
@@ -175,14 +176,12 @@ header img:hover {
   
 }
 .mv{
-  height: 44vw;
-  margin-bottom: 10vh;
+  height: 50vw;
   box-sizing: border-boxs;
 }
 /*mv slider*/
 .slider-wrapper {
   position: relative;
-
 }
 
 .slider-button
@@ -211,10 +210,10 @@ header img:hover {
 
 .slider-container {
   position: relative;
-  width: 100%;
   padding: 0;
   display: flex;
   box-sizing: border-box;
+  height: 50vw;
 
 }
 
@@ -223,7 +222,7 @@ header img:hover {
   transition: left .3s ease-in;
   padding: 0;
   margin: 0;
-  
+  height:50vw;
 }
 
 .slide {
@@ -231,11 +230,12 @@ header img:hover {
   position: absolute;
   top: 0 ;
   padding-left: 7%;
-  border-style: solid;
-  border-color:green;
+
 }
 
-
+.mv {
+  margin-bottom: 20px;
+}
 /* mv 하나일 때 */
 .mv.one {
   padding: 0 5vw;
@@ -246,13 +246,13 @@ header img:hover {
 
 
 iframe{
-  width: 70vw;
-  height:39.375vw ;
+  width:70vw;
+  height: 39.75vw;
 }
 
 .behind{
-  padding: 90px 5vw 0 5vw;
-  margin: 6vh 0;
+  padding: 0 5vw;
+  margin:  0 ;
   
 }
 .behind div{
@@ -263,18 +263,11 @@ iframe{
   display: flex;
   justify-content: space-around;
   width: 70vw;
-  margin: 0% 7%;
+  margin: 5% 7% 0 7%;
 }
+
 .more .twitter .toggle.on{
   padding-top: 1.5rem;
-}
-.more .toggle {
-  display: none;
-}
-
-.more .toggle.on {
-  display: block;
-
 }
 
 .more .toggle.on a {
@@ -283,15 +276,12 @@ iframe{
   margin: 0;
 }
 
-.more .toggle.on a:hover {
-  font-weight: bolder;
-
-}
-
 footer{
   margin: 8vh 16% ;
   padding: 0;
- 
+}
+footer p {
+  font-size:1px;
 }
 
 /* media query */ 

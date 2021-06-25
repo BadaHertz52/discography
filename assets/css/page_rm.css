@@ -1,15 +1,19 @@
 /* rm1 */
-#rm1 {
-  background-color:#fafafadc
+  /*thema*/
+#rm1 header img:hover{
+  border-bottom-color:rgb(51, 51, 51) ;
 }
-  /*navbar*/
 #rm1 .navbar {
 background-color: rgba(94, 93, 93, 0.185); ;
 }
 #rm1 .navbar .toggle_btn:hover ,
-#rm1 .navbar .toggle a:hover{
+#rm1 .navbar .toggle a:hover,
+#rm1 .twitter .toggle_btn:hover{
   background-color:  rgba(41, 41, 41, 0.815);
   color:#fafafafb
+}
+#rm1 .twitter .toggle_btn:hover{
+  padding: 2% 1% 1% 1%;
 }
 /*music*/
 #rm1 #music_platform{
@@ -24,16 +28,18 @@ background-color: rgba(94, 93, 93, 0.185); ;
   color: rgb(2,2,2);
 }
 
-#rm1 .tracklist , #rm1 p{
+#rm1 .tracklist , 
+#rm1 .slider-button li {
   font-family: 'East Sea Dokdo', cursive;
 }
 #rm1 .tracklist {
   width: 46vw;
-  font-size: 3.5vw;
+  font-size: 2.5vw;
 }
 
 #rm1 .tracklist li{
   margin-bottom: 5px;
+  padding-bottom: 2rem;
 }
 #rm1 #next , #rm2 #prev{
   color:rgba(94, 93, 93, 0.616);
@@ -42,33 +48,36 @@ background-color: rgba(94, 93, 93, 0.185); ;
 #rm1 .slider-button div p:nth-of-type(2n+1) #prev:hover{
   color:rgb(2,2,2);
 }
-#rm1 .slider-button p{
+#rm1 .slider-button p,
+#rm1 .slider-button li{
   font-size: 2.5vw;
 }
-#rm1 .slider-button p:nth-child(2){
-  font-size:6vw ;
+
+#rm1 .slider-button p:first-child,
+#rm1 .slider-button p:last-child{
+  margin-top:0.5vw
 }
-#rm1 .more{
-  background-color:rgba(241, 241, 241, 0.342) ;
+#rm1 .behind{
+  margin-top:10vw;
 }
+
 #rm1 .more .twitter {
   width: 100%;
 }
+
 #rm1 .more .toggle.on  {
-  
-  padding-left: 8vw;
+  padding-left: 2vw;
+  padding-bottom: 2vw;
   display: grid;
   grid-template-columns: repeat(3 , 25vw);
-  
+  background-color:rgba(241, 241, 241, 0.342) ;
 }
 
 #rm1 .more .toggle.on a {
-  color: rgb(94, 93, 93);
-  font-size: 1.2rem;
+  font-size: 0.8rem;
+  padding-bottom: 0.8rem;
 }
-#rm1 .more .toggle.on a:hover {
-  color: #201e1a;
-}
+
 /*미디어 쿼리*/
 /*rm1*/
 @media (max-width:380px) {
@@ -86,12 +95,12 @@ background-color: rgba(94, 93, 93, 0.185); ;
     margin: 1vw 0;
     padding: 0;
   }
-
-@media (min-width:460px) {
-  .behind{
-    margin-top:80px;
+}
+@media (max-width:460px) {
+  #rm1 .mv{
+    margin-bottom: 10vw ;
   }
-}  
+}
 @media (max-width:500px) {
   #rm1 .slider-button p {
     font-size:11px ;
@@ -114,12 +123,22 @@ background-color: rgba(94, 93, 93, 0.185); ;
 @media (max-width:544px) {
   #rm1 .more .toggle.on {
     grid-template-columns: repeat(2, 33vw);
-    
   }
 }
-@media (max-width:760px) {
+@media (min-width:460px) {
+  #rm1 .behind{
+    margin-top: 10vw;
+  }
+}
+@media (min-width:650px) {
+  #rm1 .behind {
+    margin-top:5vw ;
+  }
+}
+@media (max-width:700px) {
   #rm1 .more .toggle.on a{
-    font-size: 1rem;
+    font-size: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 }
 @media (min-width:750px) {
@@ -154,32 +173,32 @@ background-color: rgba(94, 93, 93, 0.185); ;
 
 
 /* rm2 */
-#rm2 ,#rm2 .logo {
-  background-color:#dfdfdf71
+
+#rm2 header img:hover{
+  border-bottom-color:#e6c86f
+} 
+
+#rm2 .dropdown a:hover,
+#rm2 .toggle_btn:hover,
+#rm2 .twitter a:hover{
+  font-weight: initial;
+  background-color:#f1dd9e ;
 }
-#rm1 .navbar {
-  background-color: rgba(94, 93, 93, 0.185); ;
-  }
 #rm2 #music_platform i{
   color: #6d6a6a;
 }
-#rm2 #music_platform i:hover{
-  color: #201e1a;
-}
-
-#rm2 .tracklist{
-  background-color:#fcfcf6;
+#rm2 #music_platform i:hover,
+#rm2 .slider-button div p:nth-of-type(2n+1) #next:hover ,
+#rm2 .slider-button div p:nth-of-type(2n+1) #prev:hover{
+  color:#e2b221
 }
 
 #rm2 #lyric_place{
-  background-color:#fcfcf6;
   padding: 0;
 }
-#rm2 .tracklist  .toggle_btn:hover{
-  font-weight: bolder;
- 
-} 
-#rm2 .tracklist .toggle_btn{
+
+#rm2 .tracklist .toggle_btn ,
+#rm2 .slider-button li{
 
   font-family: 'Nanum Brush Script', cursive;
   font-size: 2vw;
@@ -191,17 +210,18 @@ background-color: rgba(94, 93, 93, 0.185); ;
   color:#201e1a;
   padding-top: 10px;
 }
+
+#rm2 .slider-button li {
+  font-size: 1.3rem;
+}
 #rm2 #next , #rm2 #prev{
   color:#272725bb;
+  font-size: 1.5rem;
 }
-#rm2 .slider-button div p:nth-of-type(2n+1) #next:hover ,
-#rm2 .slider-button div p:nth-of-type(2n+1) #prev:hover{
-  color:#d4c259;
+#rm2 .behind {
+  margin-top: 10vw;
 }
 
-#rm2 .more{
-  background-color:#fafafa3a ;
-}
 #rm2 .more .twitter {
   width: 100%;
 }
@@ -211,20 +231,28 @@ background-color: rgba(94, 93, 93, 0.185); ;
   margin-bottom: 5%;
 }
 
-#rm2 .more .toggle.on a {
-  color: #636363;
-}
-#rm2 .more .toggle.on a:hover {
-  font-weight: bolder;
-}
 #rm2 .more .toggle.on p {
   margin: 0 4%;
 }
 
 /*미디어 쿼리*/
-@media (min-width:1350px) {
-  #rm2 .behind{
-    padding-top: 100px ;
+@media (min-width:2550px) {
+  #rm2 .slider-button div p:first-child ,
+  #rm2 .slider-button div p:last-child {
+  margin-top: 0;
+} 
+
+}
+
+@media (min-width:1200px) {
+  #rm2 .slider-button li {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width:1020px) {
+
+  #rm2 #next , #rm2 #prev{
+    font-size: 2rem;
   }
 }
 @media (min-width:930px) {
@@ -234,9 +262,14 @@ background-color: rgba(94, 93, 93, 0.185); ;
 }
 
 @media (max-width:930px) {
+  #rm2 .slider-button li,
   #rm2 .tracklist .toggle_btn {
     font-size: 3vw;
     padding-top: 5px;
+  }
+  #rm2 .slider-button div p:first-child ,
+  #rm2 .slider-button div p:last-child{
+    margin-top: 4vw;
   }
   #rm2 .lyric pre{
     font-size: 2.5vw;
@@ -244,7 +277,9 @@ background-color: rgba(94, 93, 93, 0.185); ;
   #rm2 #lyric_place{
     padding:0 20%;
   }
-  
+  #rm2 .slider-button div{
+    margin-bottom: 20px;
+  }
 }
 @media (min-width:769px) {
   #rm2 .vlive {
@@ -261,9 +296,22 @@ background-color: rgba(94, 93, 93, 0.185); ;
     font-size: 2.5vw;
   }
 }
+@media (max-width:650px) {
+  #rm2 .behind{
+    margin-top:15vw;
+  }
+}
 @media (max-width:560px) {
   #rm2 .slider-button p {
     font-size: 2vw;
+  }
+  #rm2 #next , #rm2 #prev{
+    font-size: 1rem;
+  }
+}
+@media (max-width:400px) {
+  #rm2 .behind{
+    margin-top:22vw;
   }
 }
 @media (max-width:370px) {
@@ -283,16 +331,22 @@ background-color: rgba(94, 93, 93, 0.185); ;
   }
   #rm2 .slider-button div {
     padding: 0;
+    justify-content: space-around;
   }
   #rm2 .slider-button p{
     margin: 2px;
     margin-bottom: 5px;
     font-size:1vw;
   }
+
 }
 @media (max-width:300px) {
   #rm2 .more .toggle.on{
     padding-left: 13vw;
+  }
+  #rm2 .slider-button div p:first-child ,
+  #rm2 .slider-button div p:last-child{
+    margin-top: 8vw;
   }
 }
 

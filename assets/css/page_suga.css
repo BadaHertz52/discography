@@ -1,28 +1,35 @@
 
 /*suga1*/
-#suga1 {
-  background-color:#1c1e22fb
-}
-#suga1  a {
-  color:  #242423;
-}
-/*navbar*/
-#suga1 header .logo, #suga1 .navbar{
-  background-color: #5d708bcc
-}
+  /*thema*/
 
+#suga1 .navbar{
+  background-color: #01459cbd;
+}
+#suga1 .navbar a {
+  color: #ffff;
+}
 #suga1 .navbar .toggle_btn:hover ,
 #suga1 .navbar .toggle a:hover{
     background-color:  rgba(41, 41, 41, 0.815);
     color:#fafafafb
   }
+#suga1 .tracklist .toggle_btn:hover,
+#suga1 .twitter a:hover{
+  background-color:#0665e262 ;
+ 
+  padding-top: 3px;
+  font-weight: 500;
+  
+}
 /*music*/
-#suga1 #music_platform i:hover{
-  color:rgba(83, 109, 136, 0.979);
+#suga1 #music_platform i:hover,
+#suga1 #prev:hover , 
+#suga1 #next:hover{
+  color:#024092d2;
 }
 #suga1 .tracklist ,
 #suga1 #lyric_place{
-  background-color:rgba(169, 173, 177, 0.979);
+  background-color:rgba(86, 132, 168, 0.219)
 }
 #suga1 .tracklist ul{
   margin-top: 10px;
@@ -47,53 +54,40 @@
   font-weight: bold;
 }
 
-#suga1 .tracklist  .toggle_btn:hover{
-  font-weight: bolder;
-} 
-
 #suga1 .lyric pre{
   padding-top: 8% ;
 }
 
 
 #suga1 i ,#suga1 .slider-button div ,#suga1 #prev ,#suga1 #next{
-  color:rgba(169, 173, 177, 0.979) ;
+  color:rgba(56, 56, 56, 0.979) ;
 }
 
-#suga1 #prev:hover , #suga1 #next:hover{
-  color:rgba(27, 94, 165, 0.979);
-}
+
 #suga1 .mv{
   height: 44vw;
 }
-#sug1 .
 #suga1 .more{
-  background-color:#fafafa11 ;
+  margin-top: 15vw;
 }
+
 #suga1 .more .twitter {
   width: 100%;
 }
-#suga1 .more .toggle.on a {
-  color: #b8b4b4;
-}
 
 #suga1 .more .toggle.on  {
-  display: flex;
-  justify-content: space-around;
+  display:grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2 ,auto);
+  row-gap: 0.8rem;
   margin-bottom: 5%;
 }
 
-#suga1 .more .toggle.on p {
+#suga1 .twitter p {
   margin: 0 4%;
+  font-size: 0.8rem;
 }
 
-#suga1 .more .toggle.on  p a:hover{
-  color: #e6e6e6;
-
-}
-#suga1 footer{
-  color: rgba(169, 173, 177, 0.979);
-}
 
 /*미디어 쿼리*/
 @media (min-width:1024px) {
@@ -101,9 +95,9 @@
     margin-top:15%;
   }
 }
-@media (max-width:1000px) {
+@media (min-width:1040px) {
   #suga1 .more{
-    margin-top: 15vw;
+    margin-top: 16vw;
   }
 }
 @media (min-width:928px) {
@@ -126,14 +120,14 @@
     
   }
 }
-@media (max-width:700px) {
-  #suga1 .more .toggle.on{
-    flex-direction: column;
-    padding: 0 25%;
+@media (min-width:806px) {
+  #suga1 .twitter p {
+    font-size: 1.5vw;
   }
-  #suga1 .more .toggle.on p {
-    padding-top:8px ;
-    font-size: 2.5vw;
+}
+@media (max-width:500px) {
+  #suga1 .twitter p{
+    font-size: 0.5rem;
   }
 }
 @media (max-width:450px) {
@@ -149,6 +143,14 @@
   #suga1 .lyric pre{
     font-size: 7px;
     font-weight: lighter;
+  }
+ 
+  #suga1 .more .toggle.on{
+    display: flex;
+    flex-direction: column;
+  }
+  #suga1 .twitter .toggle.on{
+    padding-left: 20%;
   }
 
 }
@@ -167,6 +169,9 @@
   #suga1 .slider-button div p:nth-child(3) {
     margin:  0;
   }
+  #suga1 .more {
+    margin-top: 25vw;
+  }
 }
 
 /*SUGA2 */
@@ -174,9 +179,35 @@
   font-family:'NanumMyeongjo' ;
   src: url(../font/NanumMyeongjo.ttf);
 }
+
 #suga2 .tracklist li ,
 #suga2 .lyric pre{
   font-family: 'NanumMyeongjo';
+}
+/*thema*/
+
+#suga2 .navbar .toggle_btn:hover ,
+#suga2 .navbar .toggle a:hover,
+#suga2 .tracklist .toggle_btn:hover,
+#suga2 .twitter a:hover{
+    background-color:  rgba(19, 19, 19, 0.842);
+    color:#ffff
+  }
+#suga2 .tracklist .toggle_btn:hover,
+#suga2 .twitter a:hover{
+  padding-top: 3px;
+  font-weight: 500;
+}
+#suga2 #music_platform i:hover,
+#suga2 #prev:hover , 
+#suga2 #next:hover{
+  color:rgb(175, 174, 174)
+}
+
+
+#suga2 .behind{
+  padding-top: 0;
+  margin-top: 0;
 }
 #suga2 .behind iframe{
   width:31.5vw ;
@@ -205,12 +236,10 @@
   position: relative;
 }
 #suga2 .photo .slider-button a {
-  color:#595a58a1 ;
+  
   font-size: 1.5rem;
 }
-#suga2 .photo .slider-button a:hover{
-  color:#00171fb2
-}
+
 #suga2 .photo .slider-button{
   display: flex;
   justify-content: space-between;
