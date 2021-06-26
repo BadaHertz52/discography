@@ -1,4 +1,9 @@
-
+/*레이아웃
+section 마진, 패팅 0
+section 자식요소인  inframe 이나 바로 아래 큰 div 의 padding-left 값은 2%,
+witdh:79vw로 
+해서 레이아웃의 라인 맞춤 
+*/
 /*공통 기능*/
 .toggle {
   display: none;
@@ -88,15 +93,11 @@ header img:hover {
 li{
   list-style: none;
 }
-.music > i {
-  padding-left: 10px ;
-  
-}
-.music {
-  padding:2vh 5vw;
-  
-}
 
+.music {
+  padding-top:2vh; 
+  padding-bottom:2vh;
+}
 #music_platform {
   display: flex;
   justify-content: space-around;
@@ -114,10 +115,11 @@ li{
   margin-top: 20px;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   box-sizing: border-box;
   position: relative;
   flex-wrap: wrap;
+  padding-left: 2%;
 }
 
 .cover {
@@ -180,13 +182,15 @@ li{
   box-sizing: border-boxs;
 }
 /*mv slider*/
+.mv .slider-wrapper{
+  height: 60vw;
+}
 .slider-wrapper {
   position: relative;
 }
 
-.slider-button
-{
-  margin: 0  7%;
+.slider-button{
+  margin: 0;
 }
 
 .slider-button i {
@@ -213,7 +217,7 @@ li{
   padding: 0;
   display: flex;
   box-sizing: border-box;
-  height: 50vw;
+  height: 40vw;
 
 }
 
@@ -222,17 +226,15 @@ li{
   transition: left .3s ease-in;
   padding: 0;
   margin: 0;
-  height:50vw;
+  height:40vw;
 }
 
 .slide {
   display: block;
   position: absolute;
   top: 0 ;
-  padding-left: 7%;
-
+  
 }
-
 .mv {
   margin-bottom: 20px;
 }
@@ -246,12 +248,12 @@ li{
 
 
 iframe{
-  width:70vw;
+  width:79vw;
   height: 39.75vw;
+  padding-left: 2%;
 }
 
 .behind{
-  padding: 0 5vw;
   margin:  0 ;
   
 }
@@ -260,12 +262,13 @@ iframe{
 }
 
 .more {
-  display: flex;
-  justify-content: space-around;
   width: 70vw;
-  margin: 5% 7% 0 7%;
+  margin: 5% 0% 0 0%;
+  padding-left: 2%;
 }
-
+.more .toggle_btn{
+  display: block;
+}
 .more .twitter .toggle.on{
   padding-top: 1.5rem;
 }
@@ -287,7 +290,7 @@ footer p {
 /* media query */ 
 @media  (max-width:930px ){
   .music{
-    padding:  4%;
+    padding:  4% 0%;
   }
   .cover ,.tracklist {
     width: 35vw;
@@ -332,7 +335,7 @@ footer p {
   margin-left: 40%; 
   }
   .music{
-    padding:  5%;
+    padding:  5% 0%;
   }
   .fa-compact-disc{
     font-size: 3.5vw;
@@ -346,14 +349,14 @@ footer p {
     height: 32vw;
   }
   #lyric_place {
-    width: 69vw;
+    width: 70vw;
     height: 20vw;
     padding:0 20%;
   
   }
 
   .more{
-    margin: 13% 7%;
+    margin: 13% 0%;
   }
 
 }
@@ -387,7 +390,7 @@ footer p {
 @media (max-width:550px) {
   
   .music{
-    padding: 2%;
+    padding: 2% 0%;
     margin-bottom: 6%;
   }
   #music_platform i{

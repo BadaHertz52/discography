@@ -21,7 +21,6 @@
   font-weight: 500;
   
 }
-/*music*/
 #suga1 #music_platform i:hover,
 #suga1 #prev:hover , 
 #suga1 #next:hover{
@@ -31,6 +30,23 @@
 #suga1 #lyric_place{
   background-color:rgba(86, 132, 168, 0.219)
 }
+/*music*/
+#suga1 .mixtape {
+  justify-content: initial;
+} 
+#suga1 .cover {
+  margin-right: 3vw;
+}
+#suga1 .tracklist{
+  width: 40vw;
+}
+#suga1 #lyric_place{
+  width: 79vw;
+}
+#suga1 #music_platform {
+  margin-left: 30%;
+}
+
 #suga1 .tracklist ul{
   margin-top: 10px;
   margin-bottom: 10px;
@@ -120,9 +136,34 @@
     
   }
 }
+@media (min-width:900px) {
+  #suga1 .cover {
+    margin-right: 1vw;
+  }
+  #suga1 .tracklist{
+    width: 20vw;
+    margin-right: 1vw;
+  }
+  #suga1 #lyric_place{
+    width: 36vw;
+  }
+  #suga1 #music_platform {
+    margin-left: 30%;
+  }
+}
+@media (max-width:800px) {
+  #suga1 .tracklist{
+    width: 43vw;
+  }
+}
 @media (min-width:806px) {
   #suga1 .twitter p {
     font-size: 1.5vw;
+  }
+}
+@media (max-width:550px) {
+  #suga1 .tracklist{
+    width: 56%;
   }
 }
 @media (max-width:500px) {
@@ -245,6 +286,7 @@
 #suga2 .photo .slider-button{
   display: flex;
   justify-content: space-between;
+  margin: 0 30%;
 }
 #suga2 .photo .slider-button p{
   margin: 0;
@@ -255,7 +297,7 @@
   display: grid;
   grid-template-rows: repeat(1, 12vw);
   grid-template-columns: repeat(3 ,22vw);
-  column-gap: 1.3vw;
+  column-gap: 4vw;
   width: 100%;
   height:15vw;
   padding: 0;
@@ -274,7 +316,7 @@
 #suga2 .photo img {
   width: 100%;
   height: 100%;
-  padding-left: 10vws;
+  padding-left: 2vw;
 }
 #suga2 .twitter .toggle.on{
   display: flex;

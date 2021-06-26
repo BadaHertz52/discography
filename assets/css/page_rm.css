@@ -15,6 +15,18 @@ background-color: rgba(94, 93, 93, 0.185); ;
 #rm1 .twitter .toggle_btn:hover{
   padding: 2% 1% 1% 1%;
 }
+#rm1 ::-webkit-scrollbar ,
+#rm1 ::-webkit-scrollbar{
+  background-color: rgba(241, 241, 241, 0.966);
+  width: 1vw;
+}
+#rm1 ::-webkit-scrollbar-thumb ,
+#rm1 ::-webkit-scrollbar-thumb{
+  background-color: rgb(253, 253, 253);
+  border-radius: 50px;
+  background-clip: padding-box;
+  border: 5px solid transparent;
+}
 /*music*/
 #rm1 #music_platform{
   margin-left: 58vw;
@@ -222,9 +234,6 @@ background-color: rgba(94, 93, 93, 0.185); ;
   margin-top: 10vw;
 }
 
-#rm2 .more .twitter {
-  width: 100%;
-}
 #rm2 .more .toggle.on  {
   display: flex;
   justify-content: space-around;
@@ -246,13 +255,12 @@ background-color: rgba(94, 93, 93, 0.185); ;
 
 @media (min-width:1200px) {
   #rm2 .slider-button li {
-    font-size: 1.8rem;
+    font-size: 2vw;
   }
 }
 @media (min-width:1020px) {
-
-  #rm2 #next , #rm2 #prev{
-    font-size: 2rem;
+  #rm2 #next , #rm2 #prev ,#rm2 .slider-button li{
+    font-size: 2.6vw;
   }
 }
 @media (min-width:930px) {

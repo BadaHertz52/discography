@@ -1,69 +1,136 @@
 /*jhop1*/
+  /*thema*/
+@font-face {
+  font-family:'NanumSquareRoundB' ;
+  src: url(../font/NanumSquareRoundB.ttf);
+}
+@font-face {
+  font-family:'NanumSquareRoundR' ;
+  src: url(../font/NanumSquareRoundR.ttf);
+}
+#jhope1 , #jhope1 pre {
+  font-family: 'NanumSquareRoundR';
+}
+#jhope1 .slider-button p{
+  font-family: 'NanumSquareRoundB';
+}
 
 #jhope1 header img:hover{
-  border-bottom-color:rgb(10, 204, 191) ;
+  border-bottom-color:rgb(159, 235, 235) ;
 }
 #jhope1 a:hover,
-#jhope1  .toggle_btn:hover{
-  color: rgb(10, 204, 191);
+#jhope1 .tracklist .toggle_btn:hover{
   font-weight: bold;
 }
+#jhope1 #music_platform a:hover,
+#jhope1 .slider-button a:hover{
+  color: rgb(57, 231, 231);
+}
+#jhope1 .navbar .toggle_btn:hover ,
+#jhope1 .navbar .toggle a:hover,
+#jhope1 .twitter .toggle_btn:hover
+{
+  background-color: rgb(159, 235, 235);;
+  color: rgb(2,2,2);
+  font-weight: 700;
+}
 
+#jhope1 ::-webkit-scrollbar ,
+#jhope1 ::-webkit-scrollbar{
+  background-color:rgba(243, 243, 243, 0.87) ;
+  width: 1vw;
+}
+#jhope1 ::-webkit-scrollbar-thumb ,
+#jhope1 ::-webkit-scrollbar-thumb{
+  background-color: rgb(193, 240, 255);
+  border-radius: 50px;
+  background-clip: padding-box;
+  border: 5px solid transparent;
+}
+#jhope1 .more .toggle.on{
+  background-color:rgb(241, 251, 255);
+}
 /*music*/
-
-
 #jhope1 .mixtape {
   display: flex;
   flex-direction: column;
+
 }
+
 #jhope1 .cover a{
   display: block;
 }
 #jhope1 .cover a ,
 #jhope1 .cover img{
-  width: 20vw;
-  height: 20vw;
+  width: 23vw;
+  height:auto;
 }
 #jhope1 .cover {
   display:grid ;  
   grid-template-columns: repeat(3 , 25vw);
+  column-gap: 2vw;
+  margin-bottom: 1vw;
+  height: 20vw;
 }
 
-#jhope1 .mixtape div:last-child{
+#jhope1 .mixtape > div:last-child{
   display: flex;
-  justify-content: space-between;
   height: 20vw;
-  margin-top: 2rem;
- 
+  margin-top:50px;
 }
 #jhope1 .tracklist{
-  width: 24vw ;
+  width: 33vw ;
   height: 100%;
 }
 #jhope1 .tracklist ul{
   padding-left:1px;
   padding-right: 0;
 }
+
 #jhope1 .tracklist li{
-  padding: 0 10px;
+  padding: 0.6vw 10px;
+  font-size: 1.5vw;
 }
 #jhope1 #lyric_place{
-  width: 43vw;
+  width: 40vw;
   height: 100%;
   display: flex;
   flex-direction: column;
   margin: 0;
-}
-#jhope1 #lyric_place pre{
-  padding-top: 0;
-  padding-left: 2vw;
-  font-size: 1rem;
-}
-/*behind*/
-#jhope1 .behind div {
-  padding-top: 2vw;
+  margin-left: 3vw;
+  padding:0 ;
+  position: relative;
 }
 
+#jhope1 #lyric_place pre{
+  padding-top: 0;
+  font-size: 1.5vw;
+}
+/*mv*/
+#jhope1 .slider-button  p{
+  font-size: 1.5vw;
+}
+#jhope1 .slider-button ul{
+  padding-left: 0;
+}
+#jhope1 .slider-button  li{
+  padding-bottom: 0.75vw;
+}
+#jhope1 .slider-button  p:first-child,
+#jhope1 .slider-button  p:last-child{
+  padding-top: 3vw;
+}
+/*behind*/
+#jhope1 .behind{
+  margin-top: 15vw;
+}
+#jhope1 .behind div {
+  padding-top: 2vw;
+  padding-left: 2%;
+}
+#jhope1 .behind div p {
+  font-size: 2vw;
+}
 #jhope1 .behind div:nth-child(2) a ,
 #jhope1 .behind div:nth-child(3) a{
   display: block;
@@ -81,7 +148,7 @@
 
 #jhope1 .behind div:nth-child(3) div{
   display: grid;
-  grid-template-columns: repeat(2 ,35vw);
+  grid-template-columns: repeat(2 ,40vw);
   column-gap: 6vw;
   row-gap: 6vw;
 
@@ -100,9 +167,157 @@
   width:19vw ; height:19vw;
 }
 #jhope1 .behind div:nth-child(4) div pre{
-  width: 55vw;
+  width: 58vw;
   height:20vw;
   overflow-y: scroll;
   overflow-x: scroll;
   margin: 0;
+  font-size: 1vw;
+}
+/*more*/
+#jhope1 .more .toggle_btn{
+  margin-bottom: 2vw;
+}
+#jhope1 .more .twitter .toggle.on{
+  padding-left: 2vw;
+  padding-top: 2vw;
+}
+#jhope1 .more .toggle.on a{
+  display: block;
+  font-size: 0.8vw;
+}
+#jhope1 .more .toggle.on{
+  display: grid;
+  grid-template-columns: repeat(3 ,22vw);
+  column-gap: 2vw;
+}
+#jhope1 .more .twitter .toggle.on p{
+  margin: 1.5vw 0;
+}
+/*미디어 쿼리*/
+@media (max-width:500px) {
+  #jhope1 .mixtape > div:last-child{
+    flex-direction: column;
+    height: 55vw;
+  }
+  #jhope1 .tracklist ul{
+    display: grid;
+    grid-template-columns: repeat(2 , 38vw);
+    grid-template-rows: repeat(5 ,5vw);
+    column-gap: 1vw;
+    row-gap: 2vw;
+  }
+  #jhope1 .tracklist li{
+    padding-right: 0;
+    font-size: 1.8vw ;
+    margin:0;
+  }
+  #jhope1 .tracklist li:nth-child(7){
+    margin-top: 2vw;
+    padding-bottom: 2vw;
+  }
+  #jhope1 .tracklist{
+    width: 77vw;
+    height: 20vw;
+    margin-bottom: 5vw;
+  }
+  #jhope1 #lyric_place{
+    width: 77vw;
+    height: 30vw;
+  }
+
+  #jhope1 #lyric_place pre{
+    padding-left: 13vw;
+  }
+  #jhope1 #slider-button  p:first-child,
+  #jhope1 #slider-button  p:last-child{
+    padding-top:25vw;
+  }
+  #jhope1 .behind div:nth-child(4) div pre{
+    font-size: 0.05vw;
+  }
+  #jhope1 .more .toggle.on a{
+    font-size: 0.4vw;
+  }
+}  
+@media (max-width:550px) {
+  #jhope1 .more .toggle.on{
+    grid-template-columns: repeat(2 ,30vw);
+    column-gap: 5vw;
+
+  }
+  #jhope1 .more .twitter .toggle.on{
+    padding-left: 6vw;
+  }
+}
+@media (max-width:350px) {
+  #jhope1 .mixtape > div:last-child {
+    flex-direction: row;
+    height: 40vw;
+  }
+  #jhope1 .tracklist {
+    width: 34vw;
+    height: 40vw;
+    margin-left: 1vw;
+  }  
+  #jhope1 .tracklist ul{
+    display: initial;
+    padding: 0;
+  }
+  #jhope1 .tracklist li{
+    padding:0;
+    margin-top: 2vw;
+  }
+  #jhope1 #lyric_place {
+    width: 42vw;
+    height: 100%;
+  }
+  #jhope1 #lyric_place pre{
+    padding-left:2px;
+  }
+}
+@media (max-width:400px) {
+  #jhope1 .more .toggle.on{
+    display: flex;
+    flex-direction: column;
+    height: 20vw;
+    overflow-y:scroll;
+    background-color: rgba(243, 243, 243, 0);
+  }
+  #jhope1 .more .twitter .toggle.on{
+    padding-left: 18vw;
+  }
+}
+@media (max-width:650px) {
+
+  #jhope1 .slider-button p {
+    font-size: 1.5vw;
+  }
+
+  #jhope1 .slider-button  li{
+    font-size: 1vw ;
+  }
+}
+@media (min-width:860px) {
+    #jhope1 .slider-button p {
+    font-size: 1.8vw;
+  }
+  #jhope1 .slider-button  li{
+    font-size: 2vw ;
+  }
+}
+@media (max-width:1060px) {
+
+  #jhope1 #slider-button  p:first-child,
+  #jhope1 #slider-button  p:last-child{
+    padding-top:5vw;
+  }
+}
+@media (min-width:1060px) {
+
+  #jhope1 #slider-button  p:first-child,
+  #jhope1 #slider-button  p:last-child{
+    padding-top:0;
+    margin-top: 0;
+  }
 }
