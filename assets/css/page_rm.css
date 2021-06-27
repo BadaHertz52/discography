@@ -40,16 +40,16 @@ background-color: rgba(94, 93, 93, 0.185); ;
   color: rgb(2,2,2);
 }
 
-#rm1 .tracklist , 
+#rm1 .list , 
 #rm1 .slider-button li {
   font-family: 'East Sea Dokdo', cursive;
 }
-#rm1 .tracklist {
+#rm1 .list {
   width: 46vw;
   font-size: 2.5vw;
 }
 
-#rm1 .tracklist li{
+#rm1 .list li{
   margin-bottom: 5px;
   padding-bottom: 2rem;
 }
@@ -123,7 +123,7 @@ background-color: rgba(94, 93, 93, 0.185); ;
 }
 
 @media (min-width:520px) {
-  #rm1 .tracklist {
+  #rm1 .list {
     width: 40vw;
     font-size:3vw ;
   }
@@ -161,22 +161,22 @@ background-color: rgba(94, 93, 93, 0.185); ;
 }
 
 @media (min-width:797px) {
-  #rm1 .tracklist {
+  #rm1 .list {
     width: 35vw;
     font-size: 25px;
   }
-  #rm1 .tracklist li {
+  #rm1 .list li {
     padding-bottom:6px ;
   }
 }
 
 @media (min-width:930px) {
-  #rm1 .tracklist {
+  #rm1 .list {
     width: 40vw;
     font-size: 30px;
     
   }
-  #rm1 .tracklist ul{
+  #rm1 .list ul{
     padding-left: 6%;
     padding-right: 6%;
   }
@@ -209,7 +209,7 @@ background-color: rgba(94, 93, 93, 0.185); ;
   padding: 0;
 }
 
-#rm2 .tracklist .toggle_btn ,
+#rm2 .list .toggle_btn ,
 #rm2 .slider-button li{
 
   font-family: 'Nanum Brush Script', cursive;
@@ -271,7 +271,7 @@ background-color: rgba(94, 93, 93, 0.185); ;
 
 @media (max-width:930px) {
   #rm2 .slider-button li,
-  #rm2 .tracklist .toggle_btn {
+  #rm2 .list .toggle_btn {
     font-size: 3vw;
     padding-top: 5px;
   }
@@ -279,7 +279,7 @@ background-color: rgba(94, 93, 93, 0.185); ;
   #rm2 .slider-button div p:last-child{
     margin-top: 4vw;
   }
-  #rm2 .lyric pre{
+  #rm2 .content pre{
     font-size: 2.5vw;
   }
   #rm2 #lyric_place{
