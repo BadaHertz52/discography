@@ -16,12 +16,7 @@ witdh:79vw로
 .fa-compact-disc {
   margin: 2% 0.7%; 
 }
-.popup {
-  display: none;
-}
-.popup.on{
-  display: initial;
-}
+
 a {
   text-decoration: none; 
   color: rgb(7, 7, 7) ;
@@ -137,7 +132,7 @@ li{
   width: 100%;
   height:100%;
 }
-.list {
+.tracklist {
   margin: 0;
   padding: 0;
   width: 22vw;
@@ -159,7 +154,7 @@ li{
   width: 100%;
 }
 
-.list ul {
+.tracklist ul {
   list-style: none;
   padding: 0.5% 10%;
   margin: 0;
@@ -178,7 +173,7 @@ li{
 #lyric_place .toggle.on {
   display: block;
 }
-#lyric_place .no_content {
+#lyric_place .no_lyric {
   padding: 10% 17% ;
   
 }
@@ -297,13 +292,13 @@ footer p {
   .music{
     padding:  4% 0%;
   }
-  .cover ,.list {
+  .cover ,.tracklist {
     width: 35vw;
     height: 35vw;
     margin-bottom:20px;
   }
 
-  #content_place {
+  #lyric_place {
     width: 72vw;
     height: 20vw;
     padding:0 10%;
@@ -349,11 +344,11 @@ footer p {
     width: 32vw;
     height: 32vw;
   }
-  .list{
+  .tracklist{
     width: 35vw;
     height: 32vw;
   }
-  #content_place {
+  #lyric_place {
     width: 70vw;
     height: 20vw;
     padding:0 20%;
@@ -405,11 +400,11 @@ footer p {
     width: 30vw;
     height: 30vw;
   }
-  .list{
+  .tracklist{
     width: 35vw;
     height: 30vw;
   }
-  #content_place {
+  #lyric_place {
     width: 68vw;
     height: 20vw;
     padding:0 20%;
@@ -438,13 +433,13 @@ footer p {
     width: 30vw;
     height: 30vw;
   }
-  .list{
+  .tracklist{
     width: 38vw;
     height: 30vw;
 
   }
  
-  #content_place {
+  #lyric_place {
     width: 70vw;
     height: 20vw;
     padding:0 20%;

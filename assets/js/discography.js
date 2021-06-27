@@ -1,5 +1,5 @@
 'use strict';
-// toggle 공통 //
+/* toggle 공통 */
 const toggles = document.querySelectorAll('.toggle')
 function closeOtherToggle(){
       toggles.forEach( toggle=> {
@@ -7,8 +7,8 @@ function closeOtherToggle(){
           toggle.classList.remove('on');}})
     ;
   }
-//dropDown//
-function doDropdown (toggleBtns){
+;
+function doDropwoun (toggleBtns){
       toggleBtns.forEach( 
       (btn)=> { 
         btn.addEventListener('click' , function(){ 
@@ -20,41 +20,26 @@ function doDropdown (toggleBtns){
         }
       )
 }
-// close btn//
-const open = document.querySelector('.open');
-
-function Close (){
-  const close_btns = document.querySelectorAll('.close');
-  
-  close_btns.forEach( btn =>{
-    const close_open = btn.parentElement;
-    btn.addEventListener('click' ,function(){
-    close_open.classList.remove('on');
-    
-  })
-  } )
-}
-(()=>{if (open) {
-  Close()
-}})();
 // header nav dropdown toggle 
 function toogleHeaderNavbar () {
     const $toggleBtns = document.querySelectorAll('.navbar .toggle_btn'); // node list 
-    doDropdown($toggleBtns);
+    doDropwoun($toggleBtns);
  }
 
   toogleHeaderNavbar ();
 
-//mixtape//
-function ShowContent () {
+/*music tracklist&lyrics*/
+function ShowLyrics () {
     
-  // List 와 content 배열 만들기 
-  const $lists = document.querySelectorAll(".list .toggle_btn");
-  const $arrayTrackLists = Array.from($lists);
-  const $contents = document.querySelectorAll(".content") ;
-
+  // trackList 와 lyric 배열 만들기 
+  const $trackLists = document.querySelectorAll(".tracklist .toggle_btn");
+  const $arrayTrackLists = Array.from($trackLists);
+  const $lyrics = document.querySelectorAll(".lyric") ;
+  
+  
+  
   function addEventListener() {
-    $lists.forEach(btn => {
+    $trackLists.forEach(btn => {
     
       //클릭 시 해당 곡 가사 보이고, 다른 가사들은 숨김처리 
       btn.addEventListener('click',function
@@ -65,8 +50,8 @@ function ShowContent () {
         const $index = $arrayTrackLists.indexOf(btn);
         
         // btn과 같은 index 가사 보임 
-        $contents[$index].classList.toggle('on');
-        //$content.classList.toggle('on') ;//
+        $lyrics[$index].classList.toggle('on');
+        /*$lyric.classList.toggle('on') ;*/
       });
       // 더블 클릭 시 해당 곡 가사 숨김처리 
         btn.addEventListener('dblclick',function
@@ -83,36 +68,37 @@ function ShowContent () {
     };
 
 (function do_ShowLyrics () {
-  const content_place = document.querySelector('#content_place');
-  if (lyric_place){
-  ShowContent ();
-  }
+  const lyric_place = document.querySelector('#lyric_place');
+
+
+if (lyric_place){
+  ShowLyrics ();
+}
 })();
 
-// music_platform//
+/* music_platform*/
 function togglePlatform(){
   const $toggleBtns = document.querySelectorAll('#music_platform .toggle_btn');
-  doDropdown($toggleBtns)
+  doDropwoun($toggleBtns)
 }
 
 togglePlatform();
 
-// popup//
-const popupBtn = document.querySelector('.popup_btn');
+/* popup*/
 function doPopup (){
+  const popupBtn = document.querySelector('.popup_btn');
   const popup = document.querySelector('.popup');
+  const close_btn = document.querySelector('.popup a');
   popupBtn.addEventListener('click' , function(){
     popup.classList.toggle('on') ;
   } );
-  Close();
+  close_btn.addEventListener('click' ,function(){
+    popup.classList.remove('on')
+  })
 }
-(()=>{
-  if (popupBtn){
-    doPopup();
-  }
-})()
 
-//more//
+doPopup();
+/*more*/
 function toogleMore () {
 
     const $toggle = document.querySelector('.more .toggle'); 
