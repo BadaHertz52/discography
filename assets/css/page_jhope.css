@@ -159,20 +159,34 @@
   height: 16.875vw;
 }
 
-#jhope1 .behind div:nth-child(4) div {
+#jhope1 #blue_side div {
   display: flex;
 }
 
-#jhope1 .behind div:nth-child(4) div img{
-  width:19vw ; height:19vw;
+#jhope1 #blue_side div img{
+  height:20vw;
+  width: auto;
 }
-#jhope1 .behind div:nth-child(4) div pre{
-  width: 58vw;
+#jhope1 #blue_side .popup_btn{
+  display: none;
+}
+#jhope1 #blue_side div div{
+  margin: 0;
+  padding: 0;
+}
+#jhope1 #blue_side .popup a{
+  display: none;
+}
+#jhope1 #blue_side pre{
+  width: 41vw;
   height:20vw;
   overflow-y: scroll;
   overflow-x: scroll;
   margin: 0;
   font-size: 1vw;
+}
+#jhope1 #blue_side .popup_btn a {
+  display: none;
 }
 /*more*/
 #jhope1 .more .toggle_btn{
@@ -195,6 +209,67 @@
   margin: 1.5vw 0;
 }
 /*미디어 쿼리*/
+@media (max-width:900px) {
+  #jhope1 #blue_side > div {
+    position: relative;
+  }
+  #jhope1 #blue_side .popup_btn{
+    display: block;
+    margin-left:10vw ;
+    margin-top: 4vw;
+  }
+  #jhope1 #blue_side .popup_btn p{
+    font-size: 1vw;
+    width: 30vw;
+  }
+  #jhope1 #blue_side .popup {
+    display: none;
+  }
+
+  #jhope1 #blue_side div .popup.on{
+    display:flex;
+    flex-direction:column ;    
+    position: absolute;
+    top: 1.5vw;
+    left: 0;
+    width: 79vw;
+    height:25vw;
+    box-sizing: border-box;
+    background-color: rgba(244, 252, 255, 0.945);
+  }
+  #jhope1 #blue_side div .popup.on a{
+    display: block;
+    font-size: 2vw;
+    margin-top: 1vw;
+    margin-left: 95%;
+    height: 1vw;
+  }
+  #jhope1 #blue_side div .popup.on a:hover i{
+    padding: 1%;
+    background-color: lightskyblue;
+  }
+  #jhope1 #blue_side div .popup.on pre{
+    font-size: 1.5vw;
+    width: 90%;
+    height: 100%;
+    margin-top: 10px;
+    padding:0 ;
+    padding-left: 10%;
+  }
+}
+@media (max-width:600px) {
+  #jhope1 #blue_side div .popup.on{
+    height: 30vw;
+  }
+  #jhope1 #blue_side div .popup.on pre{
+    font-size: 0.8vw;
+    padding: 0 ;
+    padding-left: 5%;
+    width: 95%;
+  }
+
+}
+
 @media (max-width:500px) {
   #jhope1 .mixtape > div:last-child{
     flex-direction: column;
@@ -233,8 +308,10 @@
   #jhope1 #slider-button  p:last-child{
     padding-top:25vw;
   }
-  #jhope1 .behind div:nth-child(4) div pre{
-    font-size: 0.05vw;
+  #jhope1 #blue_side div .popup.on pre{
+    padding-left: 0;
+    width: 100%;
+  
   }
   #jhope1 .more .toggle.on a{
     font-size: 0.4vw;
@@ -249,7 +326,11 @@
   #jhope1 .more .twitter .toggle.on{
     padding-left: 6vw;
   }
+  #jhope1 #blue_side div .popup.on pre{
+    font-size: 0.15vw;
+  }
 }
+
 @media (max-width:350px) {
   #jhope1 .mixtape > div:last-child {
     flex-direction: row;
@@ -274,9 +355,17 @@
   }
   #jhope1 #lyric_place pre{
     padding-left:2px;
-  }
+}
 }
 @media (max-width:400px) {
+
+  #jhope1 #blue_side .popup_btn{
+    margin-left: 5vw;
+  }
+  #jhope1 #blue_side .popup_btn p {
+    font-size: 0.8vw;
+    
+  }
   #jhope1 .more .toggle.on{
     display: flex;
     flex-direction: column;
@@ -288,6 +377,7 @@
     padding-left: 18vw;
   }
 }
+
 @media (max-width:650px) {
 
   #jhope1 .slider-button p {
@@ -306,6 +396,8 @@
     font-size: 2vw ;
   }
 }
+
+
 @media (max-width:1060px) {
 
   #jhope1 #slider-button  p:first-child,
@@ -313,6 +405,7 @@
     padding-top:5vw;
   }
 }
+
 @media (min-width:1060px) {
 
   #jhope1 #slider-button  p:first-child,

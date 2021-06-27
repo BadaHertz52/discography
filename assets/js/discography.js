@@ -84,12 +84,25 @@ function togglePlatform(){
 
 togglePlatform();
 
+/* popup*/
+function doPopup (){
+  const popupBtn = document.querySelector('.popup_btn');
+  const popup = document.querySelector('.popup');
+  const close_btn = document.querySelector('.popup a');
+  popupBtn.addEventListener('click' , function(){
+    popup.classList.toggle('on') ;
+  } );
+  close_btn.addEventListener('click' ,function(){
+    popup.classList.remove('on')
+  })
+}
+
+doPopup();
 /*more*/
 function toogleMore () {
 
     const $toggle = document.querySelector('.more .toggle'); 
     const $toggleBtn = document.querySelector('.more .toggle_btn');
-  console.log($toggle, $toggleBtn);
   function doToggle($toggle ,$toggleBtn) {
     
      $toggleBtn.addEventListener('click', function () {
