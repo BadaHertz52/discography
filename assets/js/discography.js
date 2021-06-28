@@ -1,15 +1,21 @@
 'use strict';
-// 공통 //
+// toggle 공통 //
+const toggles = document.querySelectorAll('.toggle');
 
+function closeOtherToggle(){
+      toggles.forEach( toggle=> {
+        if( toggle.classList.contains('on')){
+          toggle.classList.remove('on');}})
+    ;
+  }
 //dropDown//
 function doDropdown (toggleBtns){
-      toggleBtns.forEach(
-      (btn)=> {
-        btn.addEventListener('click' , function(){
-
+      toggleBtns.forEach( 
+      (btn)=> { 
+        btn.addEventListener('click' , function(){ 
           const toggle = btn.nextElementSibling ;
           toggle.classList.toggle('on')
-        }
+        } 
           )
         }
       )
@@ -46,32 +52,32 @@ function ShowContent () {
   const $lists = document.querySelectorAll(".list .toggle_btn");
   const $arrayTrackLists = Array.from($lists);
   const $contents = document.querySelectorAll(".content") ;
+
   function addEventListener() {
     $lists.forEach(btn => {
 
-      //클릭 시 해당 곡 가사 보이고, 다른 가사들은 숨김처리
+      //클릭 시 해당 content가 보이고, 다른 content들은 숨김처리, 단, 가사 외의 togglebtn의 실행이면 첫번째 가사는 보이도록 함 
       btn.addEventListener('click',function
       (){
-      //버튼과 같은 index 의 가사가 보이도록
+        closeOtherToggle();
+   
+      //버튼과 같은 index 의 content가 보이도록
         // btn의 index 구하기
-        const $index = $arrayTrackLists.indexOf(btn);
-
-        // btn과 같은 index 가사 보임
+        const $index = $arrayTrackLists.indexOf(btn); 
+         // btn과 같은 index content 보임
         $contents[$index].classList.toggle('on');
         //$content.classList.toggle('on') ;//
       });
 
     });
 
-
   }
     addEventListener();
-
     };
 
 (function do_ShowLyrics () {
   const content_place = document.querySelector('#content_place');
-  if (lyric_place){
+  if (content_place){
   ShowContent ();
   }
 })();
