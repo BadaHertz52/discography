@@ -52,7 +52,8 @@ function ShowContent () {
   const $lists = document.querySelectorAll(".list .toggle_btn");
   const $arrayTrackLists = Array.from($lists);
   const $contents = document.querySelectorAll(".content") ;
-
+  const $first_lyric = document.querySelector(".mixtape .toggle");
+  const $content_place = document.querySelector(" #content_place");
   function addEventListener() {
     $lists.forEach(btn => {
 
@@ -60,13 +61,16 @@ function ShowContent () {
       btn.addEventListener('click',function
       (){
         closeOtherToggle();
-   
       //버튼과 같은 index 의 content가 보이도록
         // btn의 index 구하기
         const $index = $arrayTrackLists.indexOf(btn); 
          // btn과 같은 index content 보임
         $contents[$index].classList.toggle('on');
         //$content.classList.toggle('on') ;//
+        console.log($contents[$index].parentElement, $content_place);
+        if ($contents[$index].parentElement !== $content_place)
+        $first_lyric.classList.toggle('on');
+        
       });
 
     });
