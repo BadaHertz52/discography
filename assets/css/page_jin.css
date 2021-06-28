@@ -7,11 +7,14 @@
 #jin1 .navbar .toggle_btn:hover,
 #jin1 .navbar a:hover,
 #jin1 .cover .toggle_btn:hover{
-  color: rgb(44, 85, 173);
   font-weight: bolder;
-  background-color: rgba(233, 233, 233, 0.822);
+  background-color:  rgb(203, 231, 255)
 }
-
+#jin1 .letter .toggle_btn:hover{
+  background-color: rgba(169, 217, 233, 0.836);
+  padding:1vw ;
+  
+}
 #jin1 #music_platform {
   margin-left:55%;
 }
