@@ -1,0 +1,240 @@
+/*jimin1*/
+/*thema*/
+
+#jimin1 header img:hover{
+  border-bottom-color:rgb(44, 85, 173) ;
+}
+#jimin1 .navbar .toggle_btn:hover,
+#jimin1 .navbar a:hover{
+  font-weight: bolder;
+  background-color: rgba(255, 242, 98, 0.822);
+}
+#jimin1 .cover .toggle_btn:hover,
+#jimin1 .letter .toggle_btn:hover{
+  font-weight: bolder;
+  background-color: rgba(252, 243, 143, 0.822);
+}
+#jimin1 #music_platform {
+  margin-left:55%;
+}
+#jimin1 #music_platform i{
+  font-size: 3.5vw;
+}
+#jimin1 #music_platform a:hover i {
+  border: 8px solid rgba(255, 241, 85, 0.781);
+  border-radius: 50px;
+}
+#jimin1 #content_place,
+#jimin1 .letter .toggle.on,
+#jimin1 .more .twitter .toggle.on{
+  background-color: rgba(245, 245, 245, 0.959)
+}
+#jimin1  ::-webkit-scrollbar {
+  background-color:rgba(245, 245, 245, 0.966) ;
+  width: 2vw;
+}
+#jimin1 ::-webkit-scrollbar-thumb {
+  background-color:#ffff ;
+  border-radius: 100px;
+  background-clip: padding-box;
+  border: 5px solid transparent;
+}
+
+#jimin1 .mixtape {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  height: 60vw;
+  margin: 0;
+  padding-left: 5%;
+}
+
+#jimin1 .cover{
+  width: 25vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0%;
+  margin: 0;
+  font-size: 1vw;
+}
+#jimin1 .cover a ,
+#jimin1 .cover img{
+  width: 23vw;
+  height: 23vw;
+}
+
+#jimin1 .cover > div:first-child{
+  margin-bottom: 2vw;
+}
+#jimin1 .cover .toggle_btn{
+  font-size: 2.2vw;
+  padding-left: 15%;
+  width: 75%;
+  
+}
+#jimin .cover > div:first-child .toggle_btn{
+  padding-left:30% ;
+}
+#jimin1 #content_place{
+  width: 44vw;
+  height: 99%;
+  padding: 0;
+  margin: 0;
+  margin-left: 2%;
+  ;
+}
+#jimin1 #content_place pre{
+  margin:0 ;
+  padding-top: 8%;
+  padding-left: 5%;
+  font-size: 0.5vw;
+  overflow-y: scroll;
+
+}
+
+#jimin1 .letter{
+  display: flex;
+  flex-direction: column;
+  padding: 0 5%;
+  position: relative;
+}
+#jimin1 .letter >div:first-child {
+  display: flex;
+  margin: 4% 0 ;
+  font-size: 3vw;
+  height: 3vw;
+}
+#jimin1 .letter >div:first-child div,
+#jimin1 .behind  p{
+  margin-right: 2vw;
+  font-size: 2.2vw;
+}
+#jimin1 .letter .list{
+  font-size: 2vw;
+  width: 100%;
+}
+#jimin1 .letter > div:last-child{
+  padding:0;
+}
+#jimin1 .letter .toggle_btn{
+  margin-right: 2vw;
+}
+#jimin1 .letter .toggle .close{
+  display: none;
+}
+#jimin1 .letter .toggle.on {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top:8vw;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 95%;
+  height: 45vw;
+  ;
+}
+#jimin1 .letter .toggle.on div{
+  height: 100%;
+}
+#jimin1 .letter .toggle.on pre{
+  padding-top: 0;
+  width: 100%;
+  height: 100%;
+  overflow:scroll;
+  font-size: 0.5vw;
+}
+#jimin1 .letter .toggle.on .close{
+  display: block;
+  position: absolute;
+  top:1vw;
+  right: 2vw;
+  color: black;
+  font-size: 2vw;
+}
+#jimin1 .letter .toggle.on .close:hover{
+  font-size: 3vw;
+}
+#jimin1 #promise img{
+  display: block;
+  width: 30vw;
+  height: 30vw;
+}
+#jimin1 #promise{
+  display: flex;
+  margin: 7% 5%;
+}
+#jimin1 #promise pre{
+  font-size: 1.8vw;
+  height: 70%;
+  overflow-y: initial;
+  overflow-x: scroll;
+}
+#jimin1 .letter .toggle.on:nth-child(2) pre{
+  font-size: 1.6vw;
+}
+#jimin1 .behind > div:last-child {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5%;
+}
+#jimin1 .behind div {
+  padding-top: 0;
+}
+#jimin1 .behind > div:last-child iframe{
+  padding: 0;
+  width: 70vw;
+  height: 35vw;
+}
+#jimin1 .more {
+  margin-top:5vw ;
+  margin-left: 2vw;
+}
+#jimin1 .more .twitter .toggle.on{
+  padding: 5% 30%;
+  font-size: 2vw;
+}
+
+@media (min-width:1000px) {
+  #jimin1 #content_place pre{
+    margin-left: 10%;
+  }
+}
+@media (min-width:750px) {
+  #jimin1 #content_place pre,
+  #jimin1 .letter .toggle.on pre{
+    font-size:1.7vw
+  }
+}
+@media (max-width:600px) {
+  #jimin1 .letter .toggle.on{
+    height: 50vw;
+  }
+}
+
+@media (max-width:450px) {
+  #jimin1 #content_place pre{
+    font-size: 0.2vw;
+  }
+ 
+  #jimin1 .letter .toggle.on{
+    height: 48vw;
+  }
+  #jimin1 #promise {
+    margin-top:10%;
+  }
+}
+@media (max-width:435px) {
+  #jimin1 .letter .toggle.on{
+    height: 55vw;
+  }
+}
+@media (max-width:380px) {
+  #jimin1 .cover .toggle_btn{
+    font-size:1vw ;
+  }
+  #jimin1 .mixtape{
+    height: 70vw;
+  }
+}
