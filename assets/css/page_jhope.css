@@ -91,7 +91,7 @@
   padding: 0.6vw 10px;
   font-size: 1.5vw;
 }
-#jhope1 #lyric_place{
+#jhope1 #content_place{
   width: 40vw;
   height: 100%;
   display: flex;
@@ -102,7 +102,7 @@
   position: relative;
 }
 
-#jhope1 #lyric_place pre{
+#jhope1 #content_place pre{
   padding-top: 0;
   font-size: 1.5vw;
 }
@@ -296,12 +296,12 @@
     height: 20vw;
     margin-bottom: 5vw;
   }
-  #jhope1 #lyric_place{
+  #jhope1 #content_place{
     width: 77vw;
     height: 30vw;
   }
 
-  #jhope1 #lyric_place pre{
+  #jhope1 #content_place pre{
     padding-left: 13vw;
   }
   #jhope1 #slider-button  p:first-child,
@@ -349,11 +349,11 @@
     padding:0;
     margin-top: 2vw;
   }
-  #jhope1 #lyric_place {
+  #jhope1 #content_place {
     width: 42vw;
     height: 100%;
   }
-  #jhope1 #lyric_place pre{
+  #jhope1 #content_place pre{
     padding-left:2px;
 }
 }

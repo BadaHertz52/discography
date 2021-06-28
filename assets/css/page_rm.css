@@ -204,9 +204,34 @@ background-color: rgba(94, 93, 93, 0.185); ;
 #rm2 .slider-button div p:nth-of-type(2n+1) #prev:hover{
   color:#e2b221
 }
+#rm2 ::-webkit-scrollbar ,
+#rm2 ::-webkit-scrollbar{
+  background-color:rgba(248, 248, 248, 0.87) ;
+  width: 1vw;
+}
+#rm2 ::-webkit-scrollbar-thumb ,
+#rm2 ::-webkit-scrollbar-thumb{
+  background-color: #e7ddbb ;
+  border-radius: 50px;
+  background-clip: padding-box;
+  border: 5px solid transparent;
+}
 
-#rm2 #lyric_place{
+#rm2 .mixtape{
+  height: 20vw;
+}
+#rm2 .mixtape >div:first-child{
+  display: flex;
+  width: 50%;
+}
+#rm2 .cover ,
+#rm2 .list {
+  width: 50%;
+  height: 100%;
+}
+#rm2 #content_place{
   padding: 0;
+  width: 50%;
 }
 
 #rm2 .list .toggle_btn ,
@@ -268,8 +293,37 @@ background-color: rgba(94, 93, 93, 0.185); ;
     font-size:2vw;
   }
 }
-
 @media (max-width:930px) {
+  #rm2 .mixtape {
+    flex-direction: column;
+    height: 60vw;
+  }
+  #rm2 .mixtape > div {
+    width: 100%;
+    height: 45%;
+  }
+  #rm2 .mixtape > div:first-child{
+    width: 100%;
+  }
+  #rm2 .cover, 
+  #rm2 .cover a {
+    width: 38%;
+    height:auto;
+    margin: 0;
+  }
+  #rm2 .list{
+    width: 58%;
+    margin: 0;
+    margin-left: 5%;
+  }
+  #rm2 #content_place{
+    width: 100%;  
+    padding:0 10%;
+    margin-top: 5%;
+  }
+  #rm2 #content_place .toggle.on{
+    margin-top: 2vw;
+  }
   #rm2 .slider-button li,
   #rm2 .list .toggle_btn {
     font-size: 3vw;
@@ -282,13 +336,12 @@ background-color: rgba(94, 93, 93, 0.185); ;
   #rm2 .content pre{
     font-size: 2.5vw;
   }
-  #rm2 #lyric_place{
-    padding:0 20%;
-  }
+  
   #rm2 .slider-button div{
     margin-bottom: 20px;
   }
 }
+
 @media (min-width:769px) {
   #rm2 .vlive {
     padding-top:5%
@@ -334,9 +387,6 @@ background-color: rgba(94, 93, 93, 0.185); ;
   }
 }
 @media (max-width:340px) {
-  #rm2 #lyric_place{
-    padding:0 15%;
-  }
   #rm2 .slider-button div {
     padding: 0;
     justify-content: space-around;

@@ -127,7 +127,8 @@ li{
   padding-left: 2%;
 }
 
-.cover {
+.cover,
+.cover a {
   width: 20vw;
   height: 20vw;
  
@@ -146,7 +147,7 @@ li{
   overflow: auto;
 }
 
-#lyric_place {
+#content_place {
   width: 25vw;
   height: 20vw;
   overflow: auto;
@@ -155,7 +156,7 @@ li{
   box-sizing: border-box;
 }
 
-#lyric_place pre{
+#content_place pre{
   width: 100%;
 }
 
@@ -171,14 +172,14 @@ li{
 }
 
 
-#lyric_place .toggle {
+#content_place .toggle {
   display: none;
 }
 
-#lyric_place .toggle.on {
+#content_place .toggle.on {
   display: block;
 }
-#lyric_place .no_content {
+#content_place .no_content {
   padding: 10% 17% ;
   
 }
@@ -345,21 +346,6 @@ footer p {
   .fa-compact-disc{
     font-size: 3.5vw;
   }
-  .cover {
-    width: 32vw;
-    height: 32vw;
-  }
-  .list{
-    width: 35vw;
-    height: 32vw;
-  }
-  #content_place {
-    width: 70vw;
-    height: 20vw;
-    padding:0 20%;
-  
-  }
-
   .more{
     margin: 13% 0%;
   }
@@ -393,7 +379,6 @@ footer p {
   }
 }
 @media (max-width:550px) {
-  
   .music{
     padding: 2% 0%;
     margin-bottom: 6%;
@@ -401,21 +386,6 @@ footer p {
   #music_platform i{
     font-size: 5vw;
   }
-  .cover {
-    width: 30vw;
-    height: 30vw;
-  }
-  .list{
-    width: 35vw;
-    height: 30vw;
-  }
-  #content_place {
-    width: 68vw;
-    height: 20vw;
-    padding:0 20%;
-  
-  }
-  
 }
 @media (min-width:700px) {
   header .logo img{
@@ -433,24 +403,6 @@ footer p {
   .slider-button p {
     font-size: 1vw ;
   }
-
-  .cover {
-    width: 30vw;
-    height: 30vw;
-  }
-  .list{
-    width: 38vw;
-    height: 30vw;
-
-  }
- 
-  #content_place {
-    width: 70vw;
-    height: 20vw;
-    padding:0 20%;
-  
-  }
-
 } 
 @media (max-width:400px) {
 
