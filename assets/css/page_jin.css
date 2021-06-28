@@ -1,0 +1,135 @@
+
+#jin1 #music_platform {
+  margin-left:60vw;
+}
+#jin1 #music_platform i{
+  font-size: 3.5vw;
+}
+#jin1 #music_platform a:hover i{
+  color: rgb(44, 85, 173);
+}
+#jin1 .mixtape {
+  display: flex;
+  flex-direction: row;
+  height: 60vw;
+  margin: 0;
+}
+
+#jin1 .cover{
+  width: 25vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0%;
+  margin: 0;
+  font-size: 1vw;
+}
+#jin1 .cover a ,
+#jin1 .cover img{
+  width: 23vw;
+  height: 23vw;
+}
+#jin1 .cover .toggle_btn:hover{
+  color: rgb(44, 85, 173);
+  font-weight: bolder;
+  background-color: rgba(233, 233, 233, 0.822);
+}
+#jin1 .cover > div:first-child{
+  margin-bottom: 2vw;
+}
+#jin1 .cover .toggle_btn{
+  font-size: 2.2vw;
+  padding-left: 15%;
+  width: 75%;
+  
+}
+#jin1 #lyric_place{
+  width: 50vw;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  
+}
+#jin1 #lyric_place pre{
+  margin:0 ;
+  margin-left: 10%;
+  font-size: 0.5vw;
+  overflow-y: scroll;
+}
+
+#jin1 .letter{
+  display: flex;
+  flex-direction: column;
+  padding: 0 2%;
+  position: relative;
+}
+#jin1 .letter >div:first-child {
+  padding: 2vw;
+  font-size: 2.6vw;
+}
+#jin1 .letter .list{
+  position: absolute;
+  top: 2.6vw;
+  left:10vw;
+  height: 4vw;
+  margin: 0;
+  margin-left: 2vw;
+  padding: 0;
+  font-size: 2vw;
+}
+#jin1 .letter > div:last-child{
+  padding:0;
+}
+#jin1 .letter .toggle_btn{
+  margin-right: 2vw;
+}
+#jin1 .letter .toggle .close{
+  display: none;
+}
+#jin1 .letter .toggle.on {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top:6vw;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: rgba(243, 243, 243, 0.945);  
+}
+#jin1 .letter .toggle.on pre{
+  padding-top: 0;
+  width: 100%;
+  overflow:scroll;
+  font-size: 0.5vw;
+}
+#jin1 .letter .toggle.on .close{
+  display: block;
+  position: absolute;
+  top:1vw;
+  right: 2vw;
+  color: black;
+  font-size: 2vw;
+}
+
+#jin1 .behind > div:last-child {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5%;
+}
+#jin1 .behind div {
+  padding-top: 0;
+}
+#jin1 .behind > div:last-child iframe{
+  padding: 0;
+  width: 70vw;
+  height: 35vw;
+}
+#jin1 .more {
+  margin-top:5vw ;
+  margin-left: 2vw;
+}
+#jin1 .more .twitter .toggle.on{
+  padding: 0;
+  padding-left: 30%;
+}
