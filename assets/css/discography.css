@@ -34,7 +34,9 @@ a:hover{
 body {
   overflow-x: hidden;
 }
-
+pre {
+  font-family: sans-serif;
+}
 /*header-nav*/
 header{
   width: 100%;
