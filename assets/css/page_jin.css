@@ -53,9 +53,9 @@
 }
 #jin1 .cover .toggle_btn{
   font-size: 2.2vw;
-  padding-left: 15%;
   width: 75%;
-  
+  text-align: center;
+  padding:0 10%;
 }
 #jin1 #content_place{
   width: 44vw;
