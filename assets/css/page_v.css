@@ -1,0 +1,224 @@
+/*v1*/
+/*thema*/
+
+#v1 header img:hover{
+  border-bottom-color:rgb(189, 235, 189) ;
+}
+#v1 .navbar .toggle_btn:hover,
+#v1 .navbar a:hover,
+#v1 .cover .toggle_btn:hover,
+#v1 .twitter .toggle_btn:hover{
+  background-color:  #49aa71 ;
+  color:#ffff;
+}
+#v1 ::-webkit-scrollbar{
+  width: 1vw;
+  height:0.5vw;
+}
+#v1  ::-webkit-scrollbar-track{
+  background-color:transparent;
+}
+#v1  ::-webkit-scrollbar-thumb{
+  background-color:#bebebe;
+  border-radius: 100px;
+}
+#v1 #music_#v1 #music_platform {
+  margin-left:55%;
+}
+
+#v1 #music_platform a:hover i{
+  color: #478f65;
+}
+#v1 #content_place,
+#v1 .song3 div,
+#v1 .twitter .toggle.on{
+  background-color: rgba(48, 139, 93, 0.068);
+}
+
+#v1 #music_platform {
+  margin-left:80%;
+}
+#v1 #music_platform i{
+  font-size: 3.5vw;
+}
+#v1 .mixtape {
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  margin: 0;
+  height: 70vw;
+}
+
+#v1 .cover{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0%;
+  margin: 0;
+  font-size: 1vw;
+}
+#v1 .cover a ,
+#v1 .cover img{
+  width: 22vw;
+  height: 22vw;
+}
+
+#v1 .cover > div:nth-child(2){
+  margin-right: 1.5vw;
+  margin-left: 1.5vw;
+}
+#v1 .cover .toggle_btn{
+  font-size: 2.2vw;
+  width: 75%;
+  text-align: center;
+  padding: 2% 10%;
+  margin: 5%;
+}
+#v1 #content_place{
+  width: 100%;
+  height: 45%;
+  padding: 0;
+  margin: 0;
+}
+#v1 #content_place pre{
+  margin:0 ;
+  padding-top: 8%;
+  padding-left: 30%;
+  font-size: 2vw;
+  overflow-y: scroll;
+}
+#v1 #content_place .toggle:last-child pre{
+  padding-left: 10%;
+}
+#v1 .behind{
+  padding-top:0;
+}
+#v1 .behind > div {
+  padding: 0;
+  padding-left: 2%;
+  margin-bottom: 5vw;
+}
+#v1 .behind > div > p{
+  font-size: 2.5vw;
+}
+#v1 .behind .song1 .layout{
+  display: flex;
+  padding: 0;
+}
+#v1 .behind .song1 .layout div{
+  padding: 0;
+}
+#v1 .behind .song1 .layout > div:first-child{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+#v1 .behind .song1 .layout > div:first-child img{
+  width: 36vw;
+  height: 18vw;
+}
+#v1 .behind .song1 .layout > div:last-child img{
+  width: 40vw;
+  height: 40vw ;
+}
+#v1 .behind .song2 div{
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+#v1 .behind .song2 iframe{
+  padding: 0;
+  width: 38vw;
+  height:19vw ;
+}
+#v1 .behind .song3 div{
+  width: 100%;
+  height: 30vw;
+  padding-top: 5%; 
+  padding-left:2%
+}
+#v1 .behind .song3 pre{
+  width: 100%;
+  height: 95%;
+  overflow:scroll;
+  line-height: 3vw;
+  font-size: 2vw;
+  padding: 0;
+  margin: 0;
+}
+#v1 .more {
+  margin: 0;
+  margin-top:5vw ;
+}
+#v1 .more .twitter .toggle.on{
+  padding: 5% 20%; 
+  font-size: 1.8vw;
+  display: grid;
+  grid-template-columns: repeat(2 ,30vw);
+}
+@media (max-width:500px) {
+  #v1 .behind .song3 div {
+    height: 33vw;
+  }
+}
+@media (max-width:450px) {
+  #v1 .mixtape {
+    flex-direction: row;
+  }
+  #v1 .cover{
+    width: 30%;
+    height: 100%;
+    flex-direction: column;
+  }
+  #v1 .cover > div:nth-child(2){
+    margin: 0;
+  }
+  #v1 .cover img,
+  #v1 .cover a{
+    width: 80%;
+    height: auto;
+  }
+  #v1 #content_place{
+    width: 70%;
+    height: 100%;
+  }
+  #v1 #content_place pre{
+    padding-left: 2%;
+  }
+  #v1 .cover .toggle_btn{
+    padding: 0;
+    margin: 0;
+    font-size: 0.8vw;
+  }
+  #v1 .behind .song3 div {
+    height: 38vw;
+  }
+  #v1 .behind .song3 pre{
+    font-size: 0.5vw;
+    line-height: 150%;
+  }
+  #v1 .more .twitter .toggle.on{
+    padding: 5% 15%; 
+    font-size: 1vw;
+  }
+}
+
+@media (max-width:350px) {
+
+  #v1 .behind .song3 div {
+    height: 48vw;
+  }
+  #v1 .more .twitter .toggle.on{
+    display: flex;
+    flex-direction: column;
+    height: 25vw;
+    overflow-y: scroll;
+}
+@media (max-width:300px) {
+  #v1 .behind .song3 div {
+    height: 53vw;
+  }
+}
