@@ -13,8 +13,10 @@ function doDropdown (toggleBtns){
       toggleBtns.forEach( 
       (btn)=> { 
         btn.addEventListener('click' , function(){ 
-          const toggle = btn.nextElementSibling ;
-          toggle.classList.toggle('on')
+          const toggles =document.querySelectorAll('.dropdown .toggle');
+          toggles.forEach(toggle =>toggle.classList.remove('on'));
+          const nextToggle = btn.nextElementSibling ;
+          nextToggle.classList.toggle('on')
         } 
           )
         }
