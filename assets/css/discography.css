@@ -1,9 +1,4 @@
-/*레이아웃
-section 마진, 패팅 0
-section 자식요소인  inframe 이나 바로 아래 큰 div 의 padding-left 값은 2%,
-witdh:79vw로 
-해서 레이아웃의 라인 맞춤 
-*/
+
 /*공통 기능*/
 .toggle {
   display: none;
