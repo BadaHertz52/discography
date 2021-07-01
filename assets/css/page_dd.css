@@ -1,0 +1,152 @@
+/*dd*/
+/*thema*/
+
+#dd header img:hover{
+  border-bottom-color:rgb(4, 40, 138);
+}
+#dd .navbar .toggle_btn:hover,
+#dd .navbar a:hover,
+#dd .cover .toggle_btn:hover,
+#dd .twitter .toggle_btn:hover{
+  background-color:  rgb(4, 40, 138) ;
+  color:#ffff;
+}
+#dd #content_place,
+#dd .popup.on,
+#dd .more .twitter .toggle.on{
+  color:rgb(0, 24, 92);
+  background-color: rgb(243, 239, 239); 
+  
+}
+#dd ::-webkit-scrollbar{
+  width: 1vw;
+  height:0.5vw;
+}
+#dd  ::-webkit-scrollbar-track{
+  background-color:transparent;
+}
+#dd  ::-webkit-scrollbar-thumb{
+  background-color:rgba(77, 91, 129, 0.616);
+  border-radius: 100px;
+}
+
+#dd .mixtape{
+  display: flex;
+
+}
+#dd .mixtape > div:first-child{
+  width: 38vw;
+  height: 38vw;
+}
+#dd  #content_place{
+  width:38vw;
+  height: 40vw;
+  margin-left: 2vw;
+  padding: 0;
+}
+#dd .mixtape pre{
+  padding: 0 10%;
+  line-height: 180%;
+}
+#dd iframe{
+  width: 100%;
+  padding: 0;
+}
+
+#dd pre{
+  font-size: 1.8vw;
+}
+#dd .performance {
+  width: 100%;
+  margin-top: 5%;
+}
+#dd .performance iframe{
+  height: 39vw;
+}
+
+#dd .behind > div{
+  padding-top: 0;
+  padding-left: 2%;
+}
+#dd .behind > div div{
+  padding: 0;
+  margin-bottom: 5%;
+  font-size: 2.5vw;
+  font-weight: 600;
+}
+#dd .behind > div .letter{
+  margin: 8% 0;
+}
+#dd .letter a{
+  display: block;
+}
+#dd .popup.on{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 36vw;
+  margin-top: 5%;
+}
+#dd .close{
+  position: absolute;
+  top: 0;
+  right:3%;
+}
+#dd .close:hover{
+  color: slateblue;
+}
+#dd .popup.on pre{
+  margin-top: 5%;
+  height: 35vw;
+  overflow: scroll;
+  line-height: 180%;
+}
+#dd .more{
+  margin-top: 5%;
+  
+}
+#dd .more .twitter .toggle.on{
+  padding-top: 0;
+  display: flex;
+  justify-content: space-around;font-size: 1.8vw;
+}
+
+@media (max-width:450px) {
+  #dd .mixtape{
+    flex-direction: column;
+    height: 60vw;
+  }
+  #dd .mixtape iframe{
+    height: 20vw;
+  }
+  #dd .mixtape > div:first-child{
+    width: 100%;
+    height: 24vw;
+  }
+  #dd #content_place{
+    width: 100%;
+    height: 33vw;
+    margin: 0;
+  }
+  #dd #content_place pre{
+    width: 80%;
+    padding-left: 20%;
+    padding-right: 0;
+  }
+  #dd pre,
+  #dd .more .twitter .toggle.on{
+    font-size: 0.8vw;
+  }
+@media (max-width:350px) {
+  #dd #content_place pre{
+    padding-left: 20%;
+  }
+}
+@media (max-width:300px) {
+  #dd .more .twitter .toggle.on{
+    flex-direction: column;
+    padding: 5% 20%;
+    padding-right: 0;
+  }
+}
+
