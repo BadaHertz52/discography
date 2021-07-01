@@ -1,5 +1,5 @@
 # discography ( LEVEL 0 project)
-### [링크](https://badahertz52.github.io/discography/main)를 열어서 프로젝트를 확인하세요. 
+#### [링크](https://badahertz52.github.io/discography/main)를 열어서 프로젝트를 확인하세요. 
 ## <프로젝트 소개>
 'LEVEL 0 프로젝트는 예비 개발자로 공부한 언어, 기능을 개인적인 작업으로 구현해 보는 프로젝트로 해당 프로젝트 중 하나인
 discography는 html. css, 바닐라 자바스크립트만을 이용하여 음악 작업물을 소개하는 홈페이지를 만드는 것을 목표로 하였다. 
