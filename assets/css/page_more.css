@@ -1,0 +1,21 @@
+#more .toggle_btn:hover,
+#more section ul{
+  background-color: rgb(248, 242, 255);
+}
+
+
+#more section:first-child{
+  margin-top:3vw ;
+}
+
+#more section:first-child p{
+  text-align: center;
+  color: gray;
+}
+
+#more section ul{
+  padding: 5% ;
+  display: grid;
+  grid-template-columns: repeat(3, 30vw);
+  row-gap: 2vw;
+}
