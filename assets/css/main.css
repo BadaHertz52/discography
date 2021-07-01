@@ -77,11 +77,14 @@ main section{
   color: #C5CAE9;
   size:2x;
 }
-/*media query*/
-/*ipad pro
-@media  (width:1024px ,height:1366px){
-
-}*/
+#profile div:last-child  a{
+  display: block;
+  margin-top: 40%;
+  font-size: 1.2rem;
+}
+#profile div:last-child  a:hover{
+  font-size: 1.5rem;
+}
 /*mobile*/
 @media (max-width:770px){
   #profile {
