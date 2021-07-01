@@ -85,10 +85,31 @@ header img:hover {
 .dropdown .toggle.on a{
   font-size: 1.5vw;
   }
-
+.sc_title{
+  padding-left: 2%;
+}
+/*sc_list*/
+.sc_list .toggle_btn:hover,
+.sc_list .toggle a:hover{
+  background-color: rgb(255, 183, 134);
+}
+.sc_list .inner ul {
+  margin-top: 5vw;
+}
+.sc_list .inner li{
+  margin-bottom: 3vw;
+  height: 20vw;
+}
+.sc_list .inner li iframe{
+  height: 90%;
+}
+.sc_list .inner li a{
+  padding-left: 2%;
+  margin: 10% 0;
+}
 /*inner*/
 .inner {
-  display: flexbox ;
+  display: flex ;
   flex-flow: column;
   flex-wrap: nowrap;
   justify-content: space-around;
