@@ -317,6 +317,11 @@ footer p {
 }
 
 /* media query */ 
+@media (min-width:1000px) {
+  footer p{
+    font-size: 1rem;
+  }
+}
 @media  (max-width:930px ){
   .music{
     padding:  4% 0%;

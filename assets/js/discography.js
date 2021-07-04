@@ -40,13 +40,8 @@ function Close (){
   Close()
 }})();
 // header nav dropdown toggle
-function toogleHeaderNavbar () {
-    const $toggleBtns = document.querySelectorAll('.navbar .toggle_btn'); // node list
-    doDropdown($toggleBtns);
 
- }
 
-  toogleHeaderNavbar ();
 
 //mixtape//
 function ShowContent () {
