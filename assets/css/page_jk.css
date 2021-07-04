@@ -1,0 +1,56 @@
+/*thema*/
+#jk1 #content_place,
+#jk1 .song1 div{
+  background-color: lavender;
+}
+
+#jk1 
+#jk1 .music{
+  padding-bottom: 0;
+}
+#jk1 .mixtape > div:first-child{
+  height: 20vw;
+  margin-bottom: 5vw;
+}
+#jk1 .mixtape iframe{
+  padding: 0;
+  height: 100%;
+}
+#jk1 .mixtape > div:last-child{
+  display: flex;
+}
+#jk1 .cover img {
+  width: 35vw;
+}
+#jk1 #content_place{
+  width: 45vw;
+  height: 35vw;
+  padding: 0;
+  padding-top: 1%;
+  padding-left: 6%;
+
+}
+#jk1 #content_place pre,
+#jk1 .song1 pre{
+  height: 100%;
+  overflow:scroll;
+  font-size: 1.8vw;
+  
+}
+#jk1 .song1,
+#jk1 .song1 div{
+  padding-top: 2%;
+}
+#jk1 .song1 p {
+  position: relative;
+  font-size: 2vw;
+}
+#jk1 .song1 p a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1vw;
+}
+#jk1 .song1 {
+  padding-left: 2%;
+}
