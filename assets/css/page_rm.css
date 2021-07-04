@@ -513,9 +513,17 @@ background-color: rgba(94, 93, 93, 0.185); ;
   #rm0 .mixtape > div:first-child iframe{
     height: 10vw;
   }
+
+}
+@media (min-width:100px) {
   #rm0 pre {
-    font-size: 1.8vw;
+    font-size: 1rem;
   }
+  #rm0 section .popup_btn:first-child {
+    font-size: 2vw;
+  }
+
+
 }
 @media (max-width:1000px) {
   #rm0 .mixtape > div:first-child,

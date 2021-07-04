@@ -15,6 +15,10 @@
   padding:1vw ;
   
 }
+#jin1 .music{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 #jin1 #music_platform {
   margin-left:55%;
 }
@@ -52,7 +56,7 @@
   margin-bottom: 2vw;
 }
 #jin1 .cover .toggle_btn{
-  font-size: 2.2vw;
+  font-size: 2vw;
   width: 75%;
   text-align: center;
   padding:0 10%;
@@ -73,7 +77,10 @@
   overflow-y: scroll;
 
 }
-
+#jin1 .letter a,
+#jin1 .behind > div:last-child p{
+  font-size: 1.8vw;
+}
 #jin1 .letter{
   display: flex;
   flex-direction: column;
@@ -88,7 +95,8 @@
   position: absolute;
   top: 2.6vw;
   left:10vw;
-  height: 4vw;
+  height: 5vw;
+  width: 60%;
   margin: 0;
   margin-left: 2vw;
   padding: 0;
@@ -115,10 +123,14 @@
   background-color: rgba(243, 243, 243, 0.945);  
 }
 #jin1 .letter .toggle.on pre{
-  padding-top: 0;
+  padding-top: 5%;
+  padding-left: 20%;
   width: 100%;
   overflow:scroll;
   font-size: 0.5vw;
+}
+#jin1 .letter .toggle.on pre:last-child{
+  padding-left: 2%;
 }
 #jin1 .letter .toggle.on .close{
   display: block;
@@ -128,7 +140,9 @@
   color: black;
   font-size: 2vw;
 }
-
+#jin1 iframe{
+  width: 100%;
+}
 #jin1 .behind > div:last-child {
   display: flex;
   flex-direction: column;
@@ -139,8 +153,8 @@
 }
 #jin1 .behind > div:last-child iframe{
   padding: 0;
-  width: 70vw;
-  height: 35vw;
+  width: 100%;
+  height: 36vw;
 }
 #jin1 .more {
   margin-top:5vw ;
@@ -161,4 +175,38 @@
   #jin1 .letter .toggle.on pre{
     font-size: 1.3vw;
   }
+}
+
+
+
+@media (max-width:300px) {
+  #jin1 .mixtape{
+    height: 70vw;
+  }
+  #jin1 .cover{
+    width: 30%;
+  }
+  #jin1 #content_place{
+    width: 65%;
+  }
+  #jin1 .cover a,
+  #jin1 .cover img{
+    height: auto;
+    width: 100%;
+  }
+
+  #jin1 .cover .toggle_btn,
+  #jin1 #content_place pre{
+    font-size:1vw;
+  }
+  #jin1 iframe{
+    width: 100%;
+  }
+  #jin1 .letter a,
+#jin1 .behind > div:last-child p{
+  font-size: 1vw;
+}
+#jin1 .letter .list{
+  height: initial;
+}
 }

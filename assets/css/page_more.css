@@ -19,3 +19,13 @@
   grid-template-columns: repeat(3, 30vw);
   row-gap: 2vw;
 }
+
+@media (max-width:600px) {
+  #more .inner div {
+    font-size:1.8vw ;
+  }
+  #more p ,
+  #more .inner a {
+    font-size: 1.2vw;
+  }
+}
