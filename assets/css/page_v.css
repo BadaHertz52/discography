@@ -56,8 +56,12 @@
   flex-direction: column;
   margin: 0;
 }
-#v1 .cover > div{
-  margin-bottom: 1vw;
+#v1 .cover > div:nth-child(2){
+  margin: 2vw 0;
+}
+#v1 .cover > div:nth-child(1) .toggle_btn ,
+#v1 .cover > div:nth-child(2) .toggle_btn{
+  padding-top: 1vw;
 }
 #v1 .cover img,
 #v1 .cover a,
@@ -80,7 +84,7 @@
 #v1 .cover .toggle_btn{
   margin: 0;
   padding: 0;
-  font-size: 25%;
+  font-size: 1.5vw;
   text-align: center;
 }
 
@@ -144,7 +148,6 @@
 }
 #v1 .more {
   margin: 0;
-  margin-top:5vw ;
 }
 #v1 .more .twitter .toggle.on{
   padding: 5% 20%; 
@@ -152,6 +155,7 @@
   display: grid;
   grid-template-columns: repeat(2 ,30vw);
 }
+
 @media (max-width:650px) {
   #v1 #content_place {
     padding-left: 5%;
@@ -159,6 +163,17 @@
   #v1 #content_place div:last-child pre{
     padding: 0;
     font-size: 1vw;
+  }
+}
+@media (min-width:550px) {
+  #v1 .behind .song3 pre{
+    padding-left: 10vw;
+    font-size: 1.5vw;
+  }
+}
+@media (max-width:550px) {
+  #v1 .mixtape{
+    height: 85vw;
   }
 }
 @media (max-width:500px) {
@@ -170,6 +185,9 @@
   }
 }
 @media (max-width:450px) {
+  #v1 .mixtape{
+    height: 90vw;
+  }
   #v1 #content_place pre{
     font-size: 0.5vw;
   }
@@ -183,9 +201,15 @@
   }
 }
 @media (max-width:360px) {
-
+  #v1 .cover > div:nth-child(2){
+    margin: 1vw 0;
+  }
+  #v1 .cover > div:nth-child(1) .toggle_btn ,
+  #v1 .cover > div:nth-child(2) .toggle_btn{
+    padding-top: 0;
+  }
   #v1 .cover .toggle_btn{
-    font-size: 10%;
+    font-size: 1.2vw;
   }
   #v1 .mixtape{
     height: 85vw;
@@ -204,6 +228,7 @@
     flex-direction: column;
     height: 25vw;
     overflow-y: scroll;
+    text-align: center;
 }
 @media (max-width:300px) {
   #v1 .behind .song3 div {

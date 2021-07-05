@@ -31,14 +31,19 @@
   background-color: rgba(245, 245, 245, 0.959)
 }
 #jimin1  ::-webkit-scrollbar {
-  background-color:rgba(245, 245, 245, 0.966) ;
-  width: 2vw;
+  width:1vw;
+  height: 1vw;
+}
+.scroll-test::-webkit-scrollbar-button{
+  width: 0;
+  height: 0;
+}
+#jimin1 ::-webkit-scrollbar-track{
+  background-color: transparent;
 }
 #jimin1 ::-webkit-scrollbar-thumb {
-  background-color:#ffff ;
+  background-color :rgba(228, 226, 216, 0.959);
   border-radius: 100px;
-  background-clip: padding-box;
-  border: 5px solid transparent;
 }
 
 #jimin1 .mixtape {
@@ -83,97 +88,18 @@
   padding: 0;
   margin: 0;
   margin-left: 2%;
+  overflow-y: scroll;
   ;
 }
 #jimin1 #content_place pre{
   margin:0 ;
   padding-top: 8%;
-  padding-left: 5%;
+  padding-left: 20%;
   font-size: 0.5vw;
-  overflow-y: scroll;
-
+  line-height: 200%;
 }
-
-#jimin1 .letter{
-  display: flex;
-  flex-direction: column;
-  padding: 0 5%;
-  position: relative;
-}
-#jimin1 .letter >div:first-child {
-  display: flex;
-  margin: 4% 0 ;
-  font-size: 3vw;
-  height: 3vw;
-}
-#jimin1 .letter >div:first-child div,
-#jimin1 .behind  p{
-  margin-right: 2vw;
-  font-size: 2.2vw;
-}
-#jimin1 .letter .list{
-  font-size: 2vw;
-  width: 100%;
-}
-#jimin1 .letter > div:last-child{
-  padding:0;
-}
-#jimin1 .letter .toggle_btn{
-  margin-right: 2vw;
-}
-#jimin1 .letter .toggle .close{
-  display: none;
-}
-#jimin1 .letter .toggle.on {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top:8vw;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  width: 95%;
-  height: 45vw;
-  ;
-}
-#jimin1 .letter .toggle.on div{
-  height: 100%;
-}
-#jimin1 .letter .toggle.on pre{
+#jimin1 .behind{
   padding-top: 0;
-  width: 100%;
-  height: 100%;
-  overflow:scroll;
-  font-size: 0.5vw;
-}
-#jimin1 .letter .toggle.on .close{
-  display: block;
-  position: absolute;
-  top:1vw;
-  right: 2vw;
-  color: black;
-  font-size: 2vw;
-}
-#jimin1 .letter .toggle.on .close:hover{
-  font-size: 3vw;
-}
-#jimin1 #promise img{
-  display: block;
-  width: 30vw;
-  height: 30vw;
-}
-#jimin1 #promise{
-  display: flex;
-  margin: 7% 5%;
-}
-#jimin1 #promise pre{
-  font-size: 1.8vw;
-  height: 70%;
-  overflow-y: initial;
-  overflow-x: scroll;
-}
-#jimin1 .letter .toggle.on:nth-child(2) pre{
-  font-size: 1.6vw;
 }
 #jimin1 .behind > div:last-child {
   display: flex;
@@ -188,6 +114,102 @@
   width: 70vw;
   height: 35vw;
 }
+#jimin1 .letter{
+  display: flex;
+  flex-direction: column;
+  padding: 0 5%;
+  position: relative;
+}
+#jimin1 .letter >div:first-child {
+  display: flex;
+  margin: 4% 0 ;
+  font-size: 3vw;
+  height: 3vw;
+}
+#jimin1 .behind  p{
+  margin-right: 2vw;
+  font-size: 2.2vw;
+}
+#jimin1 .letter .list{
+  font-size: 2vw;
+  width: 100%;
+}
+
+#jimin1 .letter .toggle_btn{
+  margin-right: 2vw;
+}
+#jimin1 .letter .toggle .close{
+  display: none;
+}
+#jimin1 .letter .toggle.on {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top:8vw;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 95%;;
+}
+#jimin1 .letter .toggle.on >div{
+  width: 100%;
+  height: 100%;
+  margin: 0;;
+}
+#jimin1 .letter .toggle.on div{
+  height: 100%;
+}
+#jimin1 .letter .toggle.on pre{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+#jimin1 .letter .toggle.on .close{
+  display: block;
+  margin-top: 2%;
+  margin-left: 90%;
+  margin-bottom: 2%;
+  color: black;
+  font-size: 2vw;
+}
+#jimin1 .letter .toggle.on .close:hover{
+  font-size: 3vw;
+}
+#jimin1 .letter .promise{
+  height: 30vw;
+}
+#jimin .letter .promise pre{
+  font-size: 1vw;
+}
+#jimin1 .promise img{
+  display: block;
+  width: 20vw;
+  height: 20vw;
+}
+#jimin1 .promise > div{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding:0 ;
+  padding-left: 10%;
+}
+#jimin1 .promise pre{
+  font-size: 1.8vw;
+  height: 100%;
+  overflow: scroll;
+}
+#jimin1 .letter .christmas_love{
+  height: 45vw;
+}
+#jimin1 .letter .christmas_love >div{
+  overflow:scroll;
+}
+#jimin1 .letter .christmas_love pre{
+  font-size: 1vw;
+  padding:0 ;
+  padding-left:5%;
+}
+
 #jimin1 .more {
   margin-top:5vw ;
   margin-left: 2vw;
@@ -208,29 +230,13 @@
     font-size:1.7vw
   }
 }
-@media (max-width:600px) {
-  #jimin1 .letter .toggle.on{
-    height: 50vw;
-  }
-}
 
 @media (max-width:450px) {
   #jimin1 #content_place pre{
     font-size: 0.2vw;
   }
- 
-  #jimin1 .letter .toggle.on{
-    height: 48vw;
-  }
-  #jimin1 #promise {
-    margin-top:10%;
-  }
 }
-@media (max-width:435px) {
-  #jimin1 .letter .toggle.on{
-    height: 55vw;
-  }
-}
+
 @media (max-width:380px) {
   #jimin1 .cover .toggle_btn{
     font-size:1vw ;

@@ -137,16 +137,7 @@ background-color: rgba(94, 93, 93, 0.185); ;
     grid-template-columns: repeat(2, 33vw);
   }
 }
-@media (min-width:460px) {
-  #rm1 .behind{
-    margin-top: 10vw;
-  }
-}
-@media (min-width:650px) {
-  #rm1 .behind {
-    margin-top:5vw ;
-  }
-}
+
 @media (max-width:700px) {
   #rm1 .more .toggle.on a{
     font-size: 0.5rem;
@@ -169,7 +160,19 @@ background-color: rgba(94, 93, 93, 0.185); ;
     padding-bottom:6px ;
   }
 }
-
+@media (max-width:800px) {
+  #rm1 .more{
+    margin-top: 3vw;
+  }
+}
+@media (max-width:900px) {
+  #rm1 .behind{
+    margin-top: 2vw;
+  }
+  #rm1 .behind >div{
+    padding-top: 2vw;
+  }
+}
 @media (min-width:930px) {
   #rm1 .list {
     width: 40vw;
@@ -204,17 +207,16 @@ background-color: rgba(94, 93, 93, 0.185); ;
 #rm2 .slider-button div p:nth-of-type(2n+1) #prev:hover{
   color:#e2b221
 }
-#rm2 ::-webkit-scrollbar ,
-#rm2 ::-webkit-scrollbar{
-  background-color:rgba(248, 248, 248, 0.87) ;
-  width: 1vw;
+#rm2 ::-webkit-scrollbar {
+  width: 0.5rem;
+  height:0.2rem ;
 }
-#rm2 ::-webkit-scrollbar-thumb ,
-#rm2 ::-webkit-scrollbar-thumb{
-  background-color: #e7ddbb ;
-  border-radius: 50px;
-  background-clip: padding-box;
-  border: 5px solid transparent;
+#rm2 ::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+#rm2 ::-webkit-scrollbar-thumb {
+  background-color: #fff2c7 ;
+  border-radius: 100px;
 }
 
 #rm2 .mixtape{
@@ -341,7 +343,11 @@ background-color: rgba(94, 93, 93, 0.185); ;
     margin-bottom: 20px;
   }
 }
-
+@media (max-width:800px) {
+  #rm2 .more{
+    margin-top: 20px;
+  }
+}
 @media (min-width:769px) {
   #rm2 .vlive {
     padding-top:5%
@@ -351,6 +357,8 @@ background-color: rgba(94, 93, 93, 0.185); ;
   #rm2 .more .toggle.on{
     display: grid;
     grid-template-columns: repeat(2 , 30vw);
+    padding-top: 0;
+    
   }
   #rm2 .more .toggle.on p {
     padding-top:8px ;
@@ -370,11 +378,13 @@ background-color: rgba(94, 93, 93, 0.185); ;
     font-size: 1rem;
   }
 }
-@media (max-width:400px) {
+@media (max-width:460px) {
   #rm2 .behind{
-    margin-top:22vw;
+    margin-top:5vw ;
   }
+  
 }
+
 @media (max-width:370px) {
   #rm2 .more .toggle.on{
     display: flex;
@@ -399,9 +409,7 @@ background-color: rgba(94, 93, 93, 0.185); ;
 
 }
 @media (max-width:300px) {
-  #rm2 .more .toggle.on{
-    padding-left: 13vw;
-  }
+
   #rm2 .slider-button div p:first-child ,
   #rm2 .slider-button div p:last-child{
     margin-top: 8vw;

@@ -6,13 +6,16 @@
 
 #more section:first-child{
   margin-top:3vw ;
+  margin-bottom: 5%;
 }
 
 #more section:first-child p{
   text-align: center;
   color: gray;
 }
-
+#more section:last-child div{
+  margin-bottom: 4vw;
+}
 #more section ul{
   padding: 5% ;
   display: grid;
@@ -20,12 +23,28 @@
   row-gap: 2vw;
 }
 
-@media (max-width:600px) {
+@media (max-width:700px) {
   #more .inner div {
     font-size:1.8vw ;
   }
   #more p ,
   #more .inner a {
     font-size: 1.2vw;
+  }
+}
+
+@media (max-width:450px) {
+  #more section ul{
+  grid-template-columns: repeat(2, 35vw);
+  padding-left: 10%;
+  }
+}
+@media (max-width:350px) {
+  #more section ul{
+  grid-template-columns: repeat(2, 35vw);
+  padding-left: 5%;
+  }
+  #more .inner section:first-child a{
+    font-size: 1vw;
   }
 }

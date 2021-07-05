@@ -122,45 +122,64 @@
 }
 /*behind*/
 #jhope1 .behind{
-  margin-top: 15vw;
+  margin-top: 10vw;
+
 }
-#jhope1 .behind div {
+#jhope1 .information{
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+}
+#jhope1 .information p:last-child{
+  margin-left: 40%;
+  font-size: 1vw;
+  color: rgb(173, 173, 173);
+}
+#jhope1 .behind > div {
   padding-top: 2vw;
   padding-left: 2%;
 }
 #jhope1 .behind div p {
   font-size: 2vw;
 }
-#jhope1 .behind div:nth-child(2) a ,
-#jhope1 .behind div:nth-child(3) a{
+#jhope1 .contents{
+  padding-top: 2vw;
+}
+#jhope1 .behind .contents a ,
+#jhope1 .behind .contents a{
   display: block;
 }
-#jhope1 .behind div:nth-child(2) div {
+#jhope1 .behind > div:nth-child(2) .contents{
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
-#jhope1 .behind div:nth-child(2) a ,
-#jhope1 .behind div:nth-child(2) img {
-  width: 22vw; 
-  height:12.375vw;
+
+#jhope1 .behind img{
+  width: 100%;
+  height: 100%;
+}
+#jhope1 .behind > div:nth-child(2) .contents a {
+  width:22vw;
+  height: auto;
+}
+#jhope1 .behind >div:nth-child(3) .contents a {
+  width: 35vw; 
+  height:20vw;
 }
 
 
-#jhope1 .behind div:nth-child(3) div{
+#jhope1 .behind > div:nth-child(3) .contents {
   display: grid;
-  grid-template-columns: repeat(2 ,40vw);
-  column-gap: 6vw;
+  grid-template-columns: repeat(2 ,35vw);
+  column-gap: 9vw;
   row-gap: 6vw;
 
-}
-#jhope1 .behind div:nth-child(3) a,
-#jhope1 .behind div:nth-child(3) img{
-  width: 30vw ;
-  height: 16.875vw;
 }
 
 #jhope1 #blue_side div {
   display: flex;
+  padding-top: 0;
 }
 
 #jhope1 #blue_side div img{
@@ -189,6 +208,9 @@
   display: none;
 }
 /*more*/
+#jhope1 .more{
+  margin-top: 5%;
+}
 #jhope1 .more .toggle_btn{
   margin-bottom: 2vw;
 }
@@ -359,6 +381,10 @@
 }
 @media (max-width:400px) {
 
+  #jhope1 .information{
+    flex-direction: column;
+    justify-content: space-around;
+  }
   #jhope1 #blue_side .popup_btn{
     margin-left: 5vw;
   }
