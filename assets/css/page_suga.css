@@ -103,6 +103,7 @@
   grid-template-rows: repeat(2 ,auto);
   row-gap: 0.8rem;
   margin-bottom: 5%;
+  padding-left: 15%;
 }
 
 #suga1 .twitter p {
@@ -208,9 +209,7 @@
   #suga1 .more .toggle.on{
     display: flex;
     flex-direction: column;
-  }
-  #suga1 .twitter .toggle.on{
-    padding-left: 20%;
+    padding-left:22% ;
   }
 
 }
@@ -395,12 +394,14 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  padding: 0;
+  padding-left: 2%;
 }
 #suga2 .twitter .toggle.on a:hover{
   font-weight: bolder;
 }
 #suga2 .twitter .toggle.on p{
-  font-size: 1rem ;
+  font-size: 1.5vw ;
 }
 @media (max-width:934px) {
   #suga2 .content pre {
@@ -481,6 +482,7 @@
     padding-left: 5vw;
     display: grid;
     grid-template-columns: repeat(2 , 35vw);
+    padding-left: 10%;
   }
   #suga2 .twitter .toggle.on p{
     font-size: 0.7rem;
@@ -521,6 +523,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-left: 25%;
   }
   #suga2 .twitter .toggle.on p{
     font-size: 0.3rem;
