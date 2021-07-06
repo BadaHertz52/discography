@@ -1,12 +1,23 @@
 /*jin1*/
 /*thema*/
-
+#jin1 ::-webkit-scrollbar{
+  width: 1vw;
+  height: 1vw;
+}
+#jin1 ::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+#jin1 ::-webkit-scrollbar-thumb{
+  background-color: rgb(210, 223, 250) ;;
+  border-radius: 100px;
+}
 #jin1 header img:hover{
   border-bottom-color:rgb(44, 85, 173) ;
 }
 #jin1 .navbar .toggle_btn:hover,
 #jin1 .navbar a:hover,
-#jin1 .cover .toggle_btn:hover{
+#jin1 .cover .toggle_btn:hover,
+#jin1 .more .toggle_btn:hover{
   font-weight: bolder;
   background-color:  rgb(203, 231, 255)
 }

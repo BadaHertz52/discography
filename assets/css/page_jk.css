@@ -4,7 +4,8 @@
 #jk1 .song1 div{
   background-color: rgba(230, 230, 250, 0.603);
 }
-#jk1 .navbar .toggle_btn:hover{
+#jk1 .navbar .toggle_btn:hover,
+#jk1 .navbar .toggle a:hover{
   background-color: rgb(196, 196, 255);
 }
 #jk1 ::-webkit-scrollbar{
