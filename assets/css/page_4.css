@@ -107,8 +107,27 @@
   padding-top: 0;
   display: flex;
   justify-content: space-around;font-size: 1.8vw;
+  font-size: 1.6vw;
 }
-
+@media (min-width:1000px) {
+  #네시 pre{
+    font-size: 1.2vw;
+  }
+  #네시 #content_place {
+    overflow-x:hidden ;
+  }
+  #네시 .mixtape pre{
+    padding: 0;
+    padding-left: 30%;
+  }
+  #네시 .popup.on pre{
+    padding: 0%;
+    padding-left: 20%;
+  }
+  #네시 .more .twitter .toggle.on{
+    font-size: 1.4vw;
+  }
+}
 @media (max-width:450px) {
   #네시 .mixtape{
     flex-direction: column;

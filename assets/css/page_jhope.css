@@ -68,15 +68,16 @@
 #jhope1 .cover {
   display:grid ;  
   grid-template-columns: repeat(3 , 25vw);
-  column-gap: 2vw;
+  column-gap: 3vw;
   margin-bottom: 1vw;
   height: 20vw;
 }
 
 #jhope1 .mixtape > div:last-child{
   display: flex;
+  justify-content: space-between;
   height: 20vw;
-  margin-top:50px;
+  margin-top:10vw;
 }
 #jhope1 .list{
   width: 33vw ;
@@ -193,8 +194,51 @@
   margin: 0;
   padding: 0;
 }
-#jhope1 #blue_side .popup a{
+#jhope1 #blue_side > div {
+  position: relative;
+}
+#jhope1 #blue_side .popup_btn{
+  display: block;
+  margin-left:10vw ;
+  margin-top: 4vw;
+}
+#jhope1 #blue_side .popup_btn p{
+  font-size: 1vw;
+  width: 30vw;
+}
+#jhope1 #blue_side .popup {
   display: none;
+}
+
+#jhope1 #blue_side div .popup.on{
+  display:flex;
+  flex-direction:column ;    
+  position: absolute;
+  top: ;
+  left: 0;
+  width: 79vw;
+  height:25vw;
+  box-sizing: border-box;
+  background-color: rgba(244, 252, 255, 0.945);
+}
+#jhope1 #blue_side div .popup.on a{
+  display: block;
+  font-size: 2vw;
+  margin-top: 1vw;
+  margin-left: 95%;
+  height: 1vw;
+}
+#jhope1 #blue_side div .popup.on a:hover i{
+  padding: 1%;
+  background-color: lightskyblue;
+}
+#jhope1 #blue_side div .popup.on pre{
+  font-size: 1.5vw;
+  width: 90%;
+  height: 100%;
+  margin-top: 10px;
+  padding:0 ;
+  padding-left: 10%;
 }
 #jhope1 #blue_side pre{
   width: 41vw;
@@ -202,7 +246,7 @@
   overflow-y: scroll;
   overflow-x: scroll;
   margin: 0;
-  font-size: 1vw;
+  font-size: 1.3vw;
 }
 #jhope1 #blue_side .popup_btn a {
   display: none;
@@ -231,52 +275,13 @@
   margin: 1.5vw 0;
 }
 /*미디어 쿼리*/
-@media (max-width:900px) {
-  #jhope1 #blue_side > div {
-    position: relative;
-  }
-  #jhope1 #blue_side .popup_btn{
-    display: block;
-    margin-left:10vw ;
-    margin-top: 4vw;
-  }
-  #jhope1 #blue_side .popup_btn p{
-    font-size: 1vw;
-    width: 30vw;
-  }
-  #jhope1 #blue_side .popup {
-    display: none;
-  }
 
+@media (max-width:768px) {
+  #jhope1 .mixtape > div:last-child{
+    height: 40vw;
+  }
   #jhope1 #blue_side div .popup.on{
-    display:flex;
-    flex-direction:column ;    
-    position: absolute;
-    top: 1.5vw;
-    left: 0;
-    width: 79vw;
-    height:25vw;
-    box-sizing: border-box;
-    background-color: rgba(244, 252, 255, 0.945);
-  }
-  #jhope1 #blue_side div .popup.on a{
-    display: block;
-    font-size: 2vw;
-    margin-top: 1vw;
-    margin-left: 95%;
-    height: 1vw;
-  }
-  #jhope1 #blue_side div .popup.on a:hover i{
-    padding: 1%;
-    background-color: lightskyblue;
-  }
-  #jhope1 #blue_side div .popup.on pre{
-    font-size: 1.5vw;
-    width: 90%;
-    height: 100%;
-    margin-top: 10px;
-    padding:0 ;
-    padding-left: 10%;
+    height: 35vw;
   }
 }
 @media (max-width:600px) {
@@ -292,40 +297,7 @@
 
 }
 
-@media (max-width:500px) {
-  #jhope1 .mixtape > div:last-child{
-    flex-direction: column;
-    height: 55vw;
-  }
-  #jhope1 .list ul{
-    display: grid;
-    grid-template-columns: repeat(2 , 38vw);
-    grid-template-rows: repeat(5 ,5vw);
-    column-gap: 1vw;
-    row-gap: 2vw;
-  }
-  #jhope1 .list li{
-    padding-right: 0;
-    font-size: 1.8vw ;
-    margin:0;
-  }
-  #jhope1 .list li:nth-child(7){
-    margin-top: 2vw;
-    padding-bottom: 2vw;
-  }
-  #jhope1 .list{
-    width: 77vw;
-    height: 20vw;
-    margin-bottom: 5vw;
-  }
-  #jhope1 #content_place{
-    width: 77vw;
-    height: 30vw;
-  }
-
-  #jhope1 #content_place pre{
-    padding-left: 13vw;
-  }
+ @media (max-width:500px) {
   #jhope1 #slider-button  p:first-child,
   #jhope1 #slider-button  p:last-child{
     padding-top:25vw;
@@ -347,6 +319,9 @@
   }
   #jhope1 .more .twitter .toggle.on{
     padding-left: 6vw;
+  }
+  #jhope1 #blue_side div .popup.on{
+    height: 40vw;
   }
   #jhope1 #blue_side div .popup.on pre{
     font-size: 0.15vw;
@@ -377,10 +352,15 @@
   }
   #jhope1 #content_place pre{
     padding-left:2px;
+  }
+  #jhope1 .list li ,
+  #jhope1 #content_place pre{
+    font-size: 0.5rem;
+  }
 }
-}
-@media (max-width:400px) {
 
+@media (max-width:400px) {
+  #jhope1 .list li
   #jhope1 .information{
     flex-direction: column;
     justify-content: space-around;
@@ -420,6 +400,10 @@
   }
   #jhope1 .slider-button  li{
     font-size: 2vw ;
+  }
+  #jhope1 #blue_side .popup_btn p{
+    font-size: 1.8vw;
+    padding: 5% 20%;
   }
 }
 

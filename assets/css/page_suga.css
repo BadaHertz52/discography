@@ -31,6 +31,9 @@
   background-color:rgba(175, 197, 214, 0.219)
 }
 /*music*/
+#suga1 .music{
+  padding-bottom: 0;
+}
 #suga1 .mixtape {
   justify-content: initial;
 } 
@@ -87,10 +90,11 @@
 
 
 #suga1 .mv{
-  height: 44vw;
+  height: 55vw;
+  margin-bottom: 0;
 }
 #suga1 .more{
-  margin-top: 15vw;
+  margin-top: 5vw;
 }
 
 #suga1 .more .twitter {
@@ -113,16 +117,7 @@
 
 
 /*미디어 쿼리*/
-@media (min-width:1024px) {
-  #suga1 .more{
-    margin-top:15%;
-  }
-}
-@media (min-width:1040px) {
-  #suga1 .more{
-    margin-top: 16vw;
-  }
-}
+
 @media (max-width:930px) {
   #suga1 .mixtape {
     flex-direction: column;

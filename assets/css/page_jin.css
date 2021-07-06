@@ -131,7 +131,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: rgba(243, 243, 243, 0.945);  
+  background-color: aliceblue;  
 }
 #jin1 .letter .toggle.on pre{
   padding-top: 5%;
@@ -187,10 +187,7 @@
     font-size: 1.3vw;
   }
 }
-
-
-
-@media (max-width:300px) {
+@media (max-width:375px) {
   #jin1 .mixtape{
     height: 70vw;
   }

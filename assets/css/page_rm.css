@@ -92,13 +92,21 @@ background-color: rgba(94, 93, 93, 0.185); ;
 
 /*미디어 쿼리*/
 /*rm1*/
+@media (max-width:544px) {
+  #rm1 .more .toggle.on {
+    grid-template-columns: repeat(2, 33vw);
+    row-gap: 0.5rem;
+    padding-left: 15%;
+  }
+}
+
 @media (max-width:380px) {
   #rm1 .more .toggle.on {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 5vw;
-    padding-left: 20vw;
+    padding-left: 30%;
     height: 30vw;
     overflow-y: scroll;
   }
@@ -113,7 +121,18 @@ background-color: rgba(94, 93, 93, 0.185); ;
     margin-bottom: 10vw ;
   }
 }
-@media (max-width:500px) {
+@media (max-width:520px) {
+  #rm1 .cover{
+    width: 25vw;
+    height: 25vw;
+  }
+  #rm1 .list{
+    width: 50vw;
+    height: 25vw;
+  }
+  #rm1 .list li{
+    padding-bottom: 0.5rem;
+  }
   #rm1 .slider-button p {
     font-size:11px ;
   }
@@ -121,8 +140,8 @@ background-color: rgba(94, 93, 93, 0.185); ;
     font-size: 20px ;
   }
 }
-
 @media (min-width:520px) {
+  
   #rm1 .list {
     width: 40vw;
     font-size:3vw ;
@@ -131,11 +150,6 @@ background-color: rgba(94, 93, 93, 0.185); ;
     font-size: 4vw;
   }
 
-}
-@media (max-width:544px) {
-  #rm1 .more .toggle.on {
-    grid-template-columns: repeat(2, 33vw);
-  }
 }
 
 @media (max-width:700px) {

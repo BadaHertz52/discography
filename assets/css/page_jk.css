@@ -24,6 +24,9 @@
 #jk1 .music{
   padding-bottom: 0;
 }
+#jk1 .mixtape{
+  justify-content: initial;
+}
 #jk1 .mixtape > div:first-child{
   height: 20vw;
   margin-bottom: 5vw;
@@ -106,5 +109,40 @@
   }
   #jk1 .song1 pre{
     padding-left:5% ;
+  }
+}
+@media (min-width:1000px) {
+  
+  #jk1 .mixtape > div:first-child {
+    height: 10vw;
+  }
+  #jk1 .mixtape > div:last-child {
+    height: 28vw;
+  }
+  #jk1 .cover{
+    width: 28vw;
+    height: 28vw;
+  }
+  #jk1 #content_place{
+    margin-left: 5vw;
+    width: 45vw;
+    height: 28vw;
+  }
+  #jk1 #content_place pre {
+    font-size: 1.2vw;
+    padding-left: 20%;
+  }
+  #jk1 .song1 pre{
+    font-size: 1.2vw;
+    padding-left: 15%;
+  }
+  #jk1 .song1 p{
+    font-size: 1.5vw;
+  }
+  #jk1 .song1 p a{
+    font-size: 1.2vw;
+  }
+  #jk1 .behind{
+    margin-top: 5vw;
   }
 }
