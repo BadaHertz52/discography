@@ -98,6 +98,7 @@
   height: 35vw;
   overflow: scroll;
   line-height: 180%;
+  font-weight: initial;
 }
 #네시 .more{
   margin-top: 5%;
